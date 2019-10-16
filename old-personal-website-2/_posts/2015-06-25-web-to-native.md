@@ -1,0 +1,49 @@
+---
+layout: post
+title: Bridges From Web To iOS
+subtitle: Things Stopping Me From Diving In With iOS Design/Development
+date: 2015-06-25 10:00:00
+---
+
+It’s a pretty well-beaten path from developing and designing on the web platform to doing it for the iOS platform, or so it would seem. Intuitively, this makes a lot of sense to me. I mean you get to go from the sprawling wilderness that is the web platform to the tranquil walled garden of the iOS app ecosystem. The screen sizes and specs that your product will be running on are known, and so it’s allowed a really consistent and beautiful set of design conventions to develop.
+
+I’d love to dip my toe in the iOS development world. I was working on a web app called [dish](http://usedish.com) for a hackathon (case study coming soon). It’s a responsive Meteor app, and I chose that architecture pretty much just for its pure speed of development, and because I wanted to practice some real meaty JavaScript (not just triggering animations and other chrome stuff).
+
+However, pretty quickly it became clear that dish made 10x more sense as an iOS experience. You take a picture of your food and tap in some info about it, and it gets uploaded to the platform. Then, other people can check out what the food looks like at a restaurant before they go, and read ratings and comments. As a web app inside iOS Safari, you can design it as slick as you want and it’s still going to feel clunky. When the hackathon was done, and we got a great responses to our idea, I told people I’d look into an iOS app and get started as soon as I could.
+
+Between then and now, I realised a lot of stuff gets in the way of building what you want on the iOS platform. I know that most, if not all, of these problems can be solved. After all, I’m not that dumb, and a tonne of other web people have transitioned to iOS. It just seems that so far I lack the knowledge to clear these hurdles, or maybe just the sheer resolve. Anyway, until that happens, here are my grumbles.
+
+## Xcode Isn’t That Great
+So if you want to seriously develop on iOS, it seems you’re pretty much going to live in Xcode. That’s fine, I get it. It’s this ecosystem architected entirely by Apple, and they’ve put together this big IDE to tie it together. It’s a code window, a console window, and a layout editor, hurrah!
+
+However, my big beef with Xcode is that it seems to obfuscate things in a lot of ways. In web development, you can choose to do the heavy workflow with all the Yeoman generators and the frameworks and that business. However, when you’re learning the fundamentals, or even when you don’t feel like you want the cruft today, you can choose to go it alone. You can pull up a text editor, and slap together a .html, a .css file, and a .js file. You’re good to go, and you can see exactly how everything just slots together.
+
+Not so in Xcode. Right from the start the IDE is full on. You can’t really just strip it down to basics to understand how exactly all the parts fit together (which how always how I work things out). Sure, there’s the Swift playground but come on what is that really for? I guess what I’m really asking for is the ability to put together a super basic app with just a few text files, and maybe the very last step in a layout environment. You know what, I’m sure it’s probably possible, but thus far I just haven’t had the basic architecture of an app explained to me in a way I understand.
+
+## Swift Is Hard
+I have never touched Objective-C. I’m too late to the iOS party, too wet behind the ears. I’m sure there are plenty of good reasons to go back to Objective-C to really get the fundamentals, but the fact that there’s a debate over whether new developers should bother with it makes my mind up for me. No thanks. So Swift is where I’ll be when I finally learn to do all this stuff in earnest.
+
+Swift is hard, man. I’m used to JavaScript, loosely typed as you like, so much so that you have to get a bit aggressive with your logical operators. My mind doesn’t do that well with strictly typed languages, especially when there’s stuff like optionals. It’s like a type within a type and both of them are strictly enforced. I’m vaguely familiar with a similar concept in JavaScript because it’s so heavily based on prototypes. Like yeah, arrays are objects technically but it doesn’t matter for 99% of the time that that’s the case. In Swift, types inside of types come up right away.
+
+What’s more, when you’re looking at some tutorial Swift code - it’s almost never just naked Swift. This is one of those complaints that I can’t really offer a fix for; I just need to get used to it. Code in iOS development is so heavily woven with library code and API code, it’s hard to get to grips with what’s what when you’re starting out, at least in my experience. Thankfully, from what I’ve read a lot effort has been made to integrate library code from Objective-C into the core of Swift. Apparently you had to use some fancy library method to even concatenate strings before Swift… what? Despite these efforts, I still find it pretty hard to work out what all these libraries are and how they all fit together.
+
+## Conventions Are Hard
+Web design has conventions, but they’re pretty darned lax. A lot of the time, this leads to some pretty dodgy UX decisions; I think that’s what stuff like Material Design for the web is responding to. I’m not averse to having strong and well-defined design conventions at all, I just like to know what they are and how rigid they are. You know in Pirates of The Caribbean when Barbossa’s like ‘the code is more what you’d call “guidelines” than actual rules’. Well, what I want to know is, to what extent are iOS conventions just ‘guidelines’?
+
+I see this UI design kits all the time. You know the kind of thing, they’re like templates for Photoshop and Sketch that include all the UI elements you’d use to chuck together a mockup of an app. The style of these elements would seem to suggest that you should be designing apps mostly in terms of layout and app flow. You read the iOS HIG and yeah, it looks like you should be limiting yourself to careful use of accent colours on pre-existing elements from the component library.
+
+Then, you open up any good iOS application installed on your phone and all that goes out the window. Some of the most gorgeous design I’ve ever seen is to be found in these iOS apps, and the best of these designs are firmly outside of the box when it comes to native iOS components. Take the Duolingo app for iOS, it’s a fantastically usable app and yet it doesn’t have any of those components you’d find in the HIG or usual mockup components. Of course, this is a testament to the designers and developers, but as a newbie it’s hard to even reason out how this works. Are these interfaces skinned versions of the native components? If I can’t figure out how these designs fit into to the platform paradigms, how do I have a hope in hell of designing like this myself?
+
+## Interaction Design Is Hard
+I know what you’re thinking. If you’re not doing interaction design on the web then your web design must not be that great. To be honest, you might be right. The element of my web design that I’m working on most intensely is animated contributions to UX. What does an element dropping in from above say about the importance of its contents? What is the appropriate animation to grab the appropriate amount of attention from the user? These are the kinds of questions I’m tackling with my slowly growing knowledge of CSS animations and more.
+
+On the web we have this concept of progressive enhancement. Don’t expect every browser to be able to handle the flashiest layouts and animations, because a healthy proportion of users will have a bad experience if you do. Instead, start from a simple but appealing baseline that should work everywhere, and carefully add layers of sophistication on top of it, to be enjoyed by those who have more modern setups.
+
+On the iOS platform though, that goes completely out the window. Pretty much everybody who uses your app is going to get the same level of polish; the app is enhanced the same amount for everybody. That lends designers a lot of freedom right out of the gate because they can be confident in using advanced interaction design as a core of their experience. That’s fantastic.
+
+Here’s the problem though. I’m yet to find an effective interaction design workflow. When you do the nasty and scroll through interaction design mockups on Dribbble, there’s all these flawless pieces of motion design that intelligently inform the user and look amazing at the same time. I wouldn’t even know how to begin designing these experiences, let alone how to implement them in Xcode.
+
+The fact that I haven’t mastered interaction animations on the web doesn’t daunt me nearly as much because the route to success is clear, a mastery of CSS animations and a light dusting of JS here and there. There’s the fact that other than After Effects, I haven’t really found another way to do high-fidelity motion mockups, but that’s another problem. It’s daunting on iOS because there’s no excuse not to leverage great motion and interaction design - it’s not like it’s going to break on last year’s iPhone. So really it’s a good problem mixed with a workflow problem.
+
+## Stop Whining
+There’s a lot of whining in the text above. Even I’ll admit that probably only a small proportion of it is ultimately justifiable. Most of it comes from the frustration of wanting to get involved in a great platform and being snubbed in various ways. I feel like to get the next however many new app developers on board, some of these problems need to be addressed. The road to making even that first single page app seems a lot more trouble that people are making out. Maybe I’m being stupid, but then again maybe not.

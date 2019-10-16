@@ -1,0 +1,131 @@
+@import 'settings';
+@import 'scroll';
+@import 'global';
+
+p{
+  line-height: 1.4em;
+}
+
+@define-mixin page-panel {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+
+  &__inner{
+    position: relative;
+    max-width: $m-content-column;
+    height: 100%;
+    margin: 0 auto;
+    padding: 1em;
+    z-index: 0;
+  }
+}
+
+.homepage-head-panel{
+  @mixin page-panel;
+  background: url('./images/icons/zag-pattern.svg');
+}
+
+  .homepage-head-panel__card{
+    max-width: 40rem;
+    padding: 1em 2em;
+    color: $c-white;
+    background: $c-main;
+  }
+
+  .homepage-head-panel h1{
+    font-family: $f-title;
+    margin: .2em 0 0;
+    font-size: 3rem;
+  }
+
+  .homepage-head-panel h2{
+    margin-top: 0;
+  }
+
+  .homepage-head-panel p{
+    max-width: $m-text-column;
+  }
+
+  .homepage-head-panel img{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-width: 600px;
+  }
+
+.contact-list{
+  padding: 0;
+  list-style: none;
+  color: $c-white;
+
+  li{
+    margin-left: 20px;
+    position: relative;
+  }
+
+  li a{
+    text-decoration: none;
+    color: inherit;
+  }
+
+  li:before{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 3px;
+    left: -20px;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+}
+
+  .contact-list__twitter:before{
+    background: url('./images/icons/twitter-white.svg');}
+
+  .contact-list__github:before{
+    background: url('./images/icons/github-white.svg');}
+
+  .contact-list__email:before{
+    background: url('./images/icons/email-white.svg');}
+
+.homepage-panel{
+  @mixin page-panel;
+  background: $c-pale;
+}
+
+.full-bleed-panel{
+  position: relative;
+  color: $c-white;
+  background-size: cover;
+  background-position: center bottom;
+  z-index: -10;
+
+  &::after{
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0; bottom: 0;
+    left: 0; right: 9;
+    z-index: -5;
+    /*background: rgba(0,0,0,0.5);*/
+  }
+}
+
+  .full-bleed-panel__card{
+    max-width: 20em;
+    padding: 1em;
+    background: $c-main;
+  }
+
+    .full-bleed-panel__card h1{
+      margin-top: 0;
+    }
+
+    .full-bleed-panel__card p{
+      margin-bottom: 0;
+    }

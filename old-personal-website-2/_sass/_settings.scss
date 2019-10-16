@@ -1,0 +1,82 @@
+//            //
+//  SETTINGS  //
+//            //
+
+// COLOURS //
+
+$c-black: #222;
+$c-white: #FFF;
+$c-grey: #EEE;
+$c-grey-dark: #9B9B9B;
+
+$c-blue-dark: #393E50;
+$c-blue-light: #55647F;
+$c-red: #C95F45;
+$c-cream: #EDEACD;
+
+$c-p-pearshaped: #498C34;
+$c-p-pumpcottage: #CAC3BC;
+$c-p-mahatma: #89181C;
+$c-p-moelogic: #5292D2;
+
+
+// FONTS //
+
+$f-base: "Plantin", times, serif;
+$f-head: "Brandon", 'Futura', sans-serif;
+
+
+// BREAKPOINTS //
+
+$br-laptop: 1000px;
+$br-tablet: 700px;
+$br-phone: 500px;
+
+
+// ANIMATIONS //
+
+$tr-quick-fade: all .1s ease-in-out 0s;
+$tr-slow-fade: all 1s ease-in-out 1s;
+
+
+// FONT FACE //
+
+@font-face {
+	font-family: 'Plantin';
+	src: url('../fonts/plantin.eot');
+	src: url('../fonts/plantin.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/plantin.woff') format('woff'),
+		url('../fonts/plantin.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Plantin';
+	src: url('../fonts/plantinitalic.eot');
+	src: url('../fonts/plantinitalic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/plantinitalic.woff') format('woff'),
+		url('../fonts/plantinitalic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Brandon';
+	src: url('../fonts/brandon.eot');
+	src: url('../fonts/brandon.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/brandon.woff') format('woff'),
+		url('../fonts/brandon.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Brandon';
+	src: url('../fonts/brandon-it.eot');
+	src: url('../fonts/brandon-it.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/brandon-it.woff') format('woff'),
+		url('../fonts/brandon-it.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}

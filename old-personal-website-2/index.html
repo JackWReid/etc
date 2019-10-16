@@ -1,0 +1,105 @@
+---
+layout: default
+---
+
+{% include header-home.html %}
+
+<div class="home-blurb">
+  <p>I’m a front-end developer working at <a href="http://depop.com" target="_blank">Depop</a>. I went to university in Exeter, and have a degree in English &amp; Politics. If you’re listening Exeter, I love you and miss you dearly. Now I work on building cool stuff for Depop and its users. There's some blog posts and info about my freelance work below. Follow me on <a href="http://twitter.com/jackreid">Twitter</a> and/or <a href="http://github.com/jackwreid">GitHub</a>. If you’re super keen, you can <a href="mailto:emailjackreid@gmail.com">email me</a>. I also take a lot of photos, and post them on <a href="https://medium.com/@jackwreid">Medium</a> and <a href="http://instagram.com/jackwreid">Instagram</a>.</p>
+</div>
+
+
+<div class="home-work">
+  <div class="home-section-header">
+    <img src="images/workitems.svg" alt="Pen &amp; Pencil">
+    <h1>Case Studies</h1>
+  </div>
+
+  <div class="home-work__grid">
+
+    <div class="home-work__grid__item">
+      <a class="home-work__grid__item__link" href="{{ site.url }}/work/moe-logic/">
+        <img class="home-work__grid__item__image" src="{{ site.url }}/images/logos/moe-logic-themed.svg" alt="Moe Logic">
+        <h1 class="home-work__grid__item__title">Moe Logic</h1>
+        <hr class="home-work__grid__item__dash" />
+        <h2 class="home-work__grid__item__subtitle">Brand, Web &amp; Graphic</h2>
+      </a>
+    </div>
+
+    <div class="home-work__grid__item">
+      <a class="home-work__grid__item__link" href="{{ site.url }}/work/pearshaped/">
+        <img class="home-work__grid__item__image" src="{{ site.url }}/images/logos/pearshaped-themed.svg" alt="PearShaped">
+        <h1 class="home-work__grid__item__title">PearShaped</h1>
+        <hr class="home-work__grid__item__dash" />
+        <h2 class="home-work__grid__item__subtitle">Brand, Web &amp; Graphic</h2>
+      </a>
+    </div>
+
+    <div class="home-work__grid__item">
+      <a class="home-work__grid__item__link" href="{{ site.url }}/work/pump-cottage/">
+        <img class="home-work__grid__item__image" src="{{ site.url }}/images/logos/pump-cottage-themed.svg" alt="Pump Cottage">
+        <h1 class="home-work__grid__item__title">Pump Cottage</h1>
+        <hr class="home-work__grid__item__dash" />
+        <h2 class="home-work__grid__item__subtitle">Web</h2>
+      </a>
+    </div>
+
+    <div class="home-work__grid__item">
+      <a class="home-work__grid__item__link" href="{{ site.url }}/work/canvas-theatre/">
+        <img class="home-work__grid__item__image" src="{{ site.url }}/images/logos/canvas-theatre-themed.svg" alt="Canvas Theatre">
+        <h1 class="home-work__grid__item__title">Canvas Theatre</h1>
+        <hr class="home-work__grid__item__dash" />
+        <h2 class="home-work__grid__item__subtitle">Brand &amp; Web</h2>
+      </a>
+    </div>
+
+    <div class="home-work__grid__item">
+      <a class="home-work__grid__item__link" href="{{ site.url }}/work/purebodyhealth/">
+        <img class="home-work__grid__item__image" src="{{ site.url }}/images/logos/purebodyhealth-themed.svg" alt="PureBody Health">
+        <h1 class="home-work__grid__item__title">PureBody Health</h1>
+        <hr class="home-work__grid__item__dash" />
+        <h2 class="home-work__grid__item__subtitle">Web</h2>
+      </a>
+    </div>
+
+    <div class="home-work__grid__item">
+      <a class="home-work__grid__item__link" href="{{ site.url }}/work/muse-bridal/">
+        <img class="home-work__grid__item__image" src="{{ site.url }}/images/logos/muse-themed.svg" alt="Muse Bridal">
+        <h1 class="home-work__grid__item__title">Muse Bridal</h1>
+        <hr class="home-work__grid__item__dash" />
+        <h2 class="home-work__grid__item__subtitle">Web</h2>
+      </a>
+    </div>
+
+  </div>
+</div>
+
+<div class="home-good-reads">
+  <div class="home-section-header">
+    <img src="images/goodreadsitems.svg" alt="Envelope" />
+    <h1>Good Reads</h1>
+  </div>
+
+  <div id="goodreadsParagraph" class="home-good-reads__paragraph">
+    <p>Right now I'm reading <a id="currentlyReadingLink" href="https://www.amazon.co.uk/Whom-Bell-Tolls-Ernest-Hemingway/dp/0099908603"><em id="currentlyReadingTitle">For Whom The Bell Tolls</em></a> by <span id="currentlyReadingAuthor">Ernest Hemingway</span>. <span id="currentlyReadingComments">I'm liking Hemingway at the moment. He's like that friend who is so abrupt you can't help but find them endearing.</span> I just did a big streak of reading Murakami who I discovered a couple of months ago. If you want to see what else I'm looking at reading, you can check out <a href="https://www.goodreads.com/user/show/54047855-jack-reid"><em>Goodreads</em></a>. God I wish Goodreads was less ugly.</p>
+  </div>
+</div>
+
+<div class="home-blog">
+  <div class="home-section-header">
+    <img src="images/blogitems.svg" alt="Notepad &amp; Pen">
+    <h1>Blog</h1>
+  </div>
+
+  <ul class="home-blog__list">
+    {% for post in site.posts %}
+      <li class="home-blog__list__item">
+        <a href="{{ site.url }}{{ post.url }}">
+        <h1 class="home-blog__list__item__title">{{ post.title }}</a></h1>
+        <h2 class="home-blog__list__item__subtitle">{{ post.subtitle }}</h2>
+        <p class="home-blog__list__item__date">{{ post.date | date: '%B %-d, %Y'}}</p>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>

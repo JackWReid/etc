@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body{
+  display: block;
+  position: static;
+  margin: 0;
+  padding: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+
+  font-family: $f-main;
+  color: $c-black;
+  background: $c-white;
+}

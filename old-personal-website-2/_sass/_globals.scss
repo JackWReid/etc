@@ -1,0 +1,103 @@
+//           //
+//  GLOBALS  //
+//           //
+
+:root{
+	font-family: $f-base;
+	color: $c-blue-dark;
+	font-size: 18px;
+}
+
+::selection {
+    background-color: $c-red;
+    color: $c-white;
+}
+
+body{
+	background-color: $c-blue-dark;
+}
+
+.page-wrapper{
+	background-color: $c-white;
+}
+
+strong, b{
+	font-weight: bold;
+}
+
+em, i{
+	font-weight: italic;
+}
+
+p{
+	max-width: 30em;
+	margin: 1em auto;
+	text-align: justify;
+	line-height: 1.7;
+
+	a{
+		text-decoration: underline;
+		color: $c-red;
+	}
+}
+
+// CODE HIGHLIGHTING
+/* For some reason pygments gives code
+*  blocks this container */
+pre{
+	max-width: 30rem;
+	margin: 3em auto;
+	white-space: pre-wrap;
+
+	& > code{
+		max-width: 100%;
+		font-size: 14px;
+	}
+}
+
+p > code {
+	font-size: .9em;
+	color: $c-red;
+}
+
+
+%site-header{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	font-family: $f-head;
+	background: $c-blue-dark;
+	color: $c-red;
+}
+
+	$const__page-header-height: 100px;
+	.site-header--page{
+		@extend %site-header;
+		height: $const__page-header-height;
+	}
+
+	$const__home-header-height: 400px;
+	.site-header--home{
+		@extend %site-header;
+		max-height: $const__home-header-height;
+		background: $c-blue-dark;
+	}
+
+		.site-header--home__link{
+			display: block;
+			overflow: hidden;
+			max-width: 100%;
+			max-height: 100%;
+			width: 100%;
+		}
+
+		.site-header--home__image{
+			display: block;
+			padding: 30px;
+			max-height: $const__home-header-height;
+		}
+
+.site-footer{
+	@extend %site-header;
+}

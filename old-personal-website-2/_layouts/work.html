@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+{% include header-page.html %}
+
+<div class="work-header">
+	<div class="work-header__inner">
+		<h1 class="work-header__title">{{ page.title }}</h1>
+		<h2 class="work-header__subtitle">{{ page.subtitle }}</h2>
+	</div>
+</div>
+
+{% if page.code %}
+<div class="work-code-stripe">
+	<p>To see the code that went into building this project, check out <a href="{{ page.code }}">the GitHub repo</a>. Look at the readme for specific examples of note.</p>
+</div>
+{% endif %}
+
+<article class="work">
+	{{ content }}
+</div>

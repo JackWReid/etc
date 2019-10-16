@@ -1,0 +1,13 @@
+/* Colours */
+$c-main: #3F72AF;
+$c-accent: #112D4E;
+$c-white: #F9F7F7;
+$c-black: #222222;
+$c-pale: #DBE2EF;
+
+/* Measures */
+$m-text-column: 30rem;
+
+/* Fonts */
+$f-main: 'Istok Web', sans-serif;
+$f-title: 'Circular Std', sans-serif;

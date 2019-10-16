@@ -1,0 +1,120 @@
+//            //
+//    WORK    //
+//            //
+
+.work-header{
+	width: 100%;
+	padding: 2em 1em;
+	background: $c-red;
+}
+
+.work-header__inner{
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+	.work-header__title{
+		margin: 0;
+		font-size: 64px;
+		font-family: $f-head;
+		color: $c-cream;
+
+		@media screen and (max-width: $br-tablet){
+			font-size: 32px;
+		}
+	}
+
+	.work-header__subtitle{
+		margin: .5em 0;
+		font-size: 32px;
+		font-style: italic;
+		line-height: 1.3;
+		color: $c-cream;
+
+		@media screen and (max-width: $br-tablet){
+			font-size: 18px;
+		}
+	}
+
+.work-code-stripe{
+	background: $c-cream;
+	padding: 1em;
+
+	p{
+		text-align: center;
+		max-width: 100%;
+	}
+}
+
+//                     //
+//    WORK SECTIONS    //
+//                     //
+
+// Text Section
+.work-section--text-section{
+	margin: 2em 0;
+	width: 100%;
+}
+
+	.work-section--text-section p{
+		padding: 0 1em;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+// Simple Center Image
+.work-section--simple-center-image{
+	display: block;
+	max-width: 500px;
+	margin: 3em auto;
+}
+
+	.work-section--simple-center-image--small{
+		display: block;
+		max-width: 200px;
+		margin: 3em auto;
+	}
+
+
+// Inset Screen Image
+.work-section--screened-image{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 3em auto;
+	background: $c-blue-dark;
+	height: 700px;
+}
+
+	/* Flattens the screened image section
+	*  against the finial in case it happens
+	*  to be the last item on the page. */
+	.final-panel{
+		margin-bottom: 0;
+	}
+
+	.work-section--screened-image__container{
+		max-width: 800px;
+		padding: 2em;
+	}
+
+		.screened--jumbo-wide{
+			max-width: 100%;
+		}
+
+	.work-section--screened-image__topper{
+		max-width: 100%;
+		margin-bottom: -5px;
+	}
+
+	.work-section--screened-image__container__area{
+		max-width: 100%;
+		max-height: 500px;
+		margin: 0 auto;
+		overflow-y: scroll;
+	}
+
+		.work-section--screened-image__image{
+			width: 100%;
+		}

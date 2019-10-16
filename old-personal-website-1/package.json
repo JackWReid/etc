@@ -1,0 +1,35 @@
+{
+  "name": "jackreid",
+  "version": "1.0.0",
+  "description": "Jack Reid's personal website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JackWReid/jackreid.git"
+  },
+  "keywords": [
+    "portfolio",
+    "website"
+  ],
+  "author": "Jack W. Reid",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JackWReid/jackreid/issues"
+  },
+  "homepage": "https://github.com/JackWReid/jackreid#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "browser-sync": "^2.12.1",
+    "cssnext": "^1.8.4",
+    "gulp-postcss": "^6.1.0",
+    "gulp-util": "^3.0.7",
+    "postcss": "^5.0.19",
+    "precss": "^1.4.0"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1"
+  }
+}

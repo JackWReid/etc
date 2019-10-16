@@ -1,0 +1,13 @@
+# Site settings
+title: jackwreid
+email: emailjackreid@gmail.com
+description: Frontend web developer from the UK.
+baseurl: ""
+url: "http://jackwreid.uk"
+twitter_username: jackreid
+github_username:  JackWReid
+
+# Build settings
+markdown: kramdown
+permalink: none
+exclude: [node_modules]

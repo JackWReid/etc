@@ -1,0 +1,239 @@
+/* Colours */
+/* Measures */
+/* Fonts */
+/* One Page Scroll JS */
+body, html{
+  margin: 0;
+  overflow: hidden;
+  -webkit-transition: opacity 400ms;
+  -moz-transition: opacity 400ms;
+  transition: opacity 400ms;
+}
+body, .onepage-wrapper, html{
+  display: block;
+  position: static;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+.onepage-wrapper{
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+  padding: 0;
+  -webkit-transform-style: preserve-3d;
+}
+.onepage-wrapper .ops-section{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.onepage-pagination{
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  z-index: 5;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.onepage-pagination li{
+  padding: 0;
+  text-align: center;
+}
+.onepage-pagination li a{
+  padding: 10px;
+  width: 4px;
+  height: 4px;
+  display: block;
+}
+.onepage-pagination li a:before{
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: rgba(0,0,0,0.85);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+}
+.onepage-pagination li a.active:before{
+  width: 10px;
+  height: 10px;
+  background: none;
+  border: 1px solid black;
+  margin-top: -4px;
+  left: 8px;
+}
+.disabled-onepage-scroll, .disabled-onepage-scroll .wrapper{
+  overflow: auto;
+}
+.disabled-onepage-scroll .onepage-wrapper .ops-section{
+  position: relative !important;
+  top: auto !important;
+}
+.disabled-onepage-scroll .onepage-wrapper{
+  -webkit-transform: none !important;
+  -moz-transform: none !important;
+  transform: none !important;
+  -ms-transform: none !important;
+  min-height: 100%;
+}
+.disabled-onepage-scroll .onepage-pagination{
+  display: none;
+}
+body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html{
+  position: inherit;
+}
+*{
+  box-sizing: border-box;
+}
+html, body{
+  display: block;
+  position: static;
+  margin: 0;
+  padding: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  font-family: 'Istok Web',sans-serif;
+  color: #222222;
+  background: #F9F7F7;
+}
+
+p{
+  line-height: 1.4em;
+}
+
+.homepage-head-panel{
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  background: url('./images/icons/zag-pattern.svg');
+}
+
+.homepage-head-panel__inner{
+  position: relative;
+  max-width: $m-content-column;
+  height: 100%;
+  margin: 0 auto;
+  padding: 1em;
+  z-index: 0;
+}
+
+  .homepage-head-panel__card{
+    max-width: 40rem;
+    padding: 1em 2em;
+    color: #F9F7F7;
+    background: #3F72AF;
+  }
+
+  .homepage-head-panel h1{
+    font-family: 'Circular Std',sans-serif;
+    margin: .2em 0 0;
+    font-size: 3rem;
+  }
+
+  .homepage-head-panel h2{
+    margin-top: 0;
+  }
+
+  .homepage-head-panel p{
+    max-width: 30rem;
+  }
+
+  .homepage-head-panel img{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-width: 600px;
+  }
+
+.contact-list{
+  padding: 0;
+  list-style: none;
+  color: #F9F7F7;
+}
+
+.contact-list li{
+  margin-left: 20px;
+  position: relative;
+}
+
+.contact-list li a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.contact-list li:before{
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 3px;
+  left: -20px;
+  content: "";
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+  .contact-list__twitter:before{
+    background: url('./images/icons/twitter-white.svg');}
+
+  .contact-list__github:before{
+    background: url('./images/icons/github-white.svg');}
+
+  .contact-list__email:before{
+    background: url('./images/icons/email-white.svg');}
+
+.homepage-panel{
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  background: #DBE2EF;
+}
+
+.homepage-panel__inner{
+  position: relative;
+  max-width: $m-content-column;
+  height: 100%;
+  margin: 0 auto;
+  padding: 1em;
+  z-index: 0;
+}
+
+.full-bleed-panel{
+  position: relative;
+  color: #F9F7F7;
+  background-size: cover;
+  background-position: center bottom;
+  z-index: -10
+}
+
+.full-bleed-panel::after{
+  content: "";
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 9;
+  z-index: -5;
+  /*background: rgba(0,0,0,0.5);*/
+}
+
+  .full-bleed-panel__card{
+    max-width: 20em;
+    padding: 1em;
+    background: #3F72AF;
+  }
+
+    .full-bleed-panel__card h1{
+      margin-top: 0;
+    }
+
+    .full-bleed-panel__card p{
+      margin-bottom: 0;
+    }

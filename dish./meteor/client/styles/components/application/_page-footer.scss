@@ -1,0 +1,21 @@
+// ============= //
+//  SITE FOOTER  //
+// ============= //
+
+.page-footer{
+	width: 100%;
+	padding: 10px 15px;
+
+	color: $c-white;
+	background: $c-blue;
+}
+
+	.page-footer__navigation{
+		display: flex;
+		justify-content: center;
+	}
+
+		.page-footer__navigation__item{
+			margin: 0 10px;
+			text-decoration: underline;
+		}

@@ -1,0 +1,9 @@
+<template name="homePage">
+	{{#if currentUser}}
+	<div class="dishh-timeline">
+		{{>postsTimeline}}
+	</div>
+	{{else}}
+	{{>visitorTimeline}}
+	{{/if}}
+</template>

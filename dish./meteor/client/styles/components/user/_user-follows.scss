@@ -1,0 +1,17 @@
+// ============= //
+//  USER FOLLOWS //
+// ============= //
+
+.user-follows{
+	@include content-column;
+	margin: 0 auto;
+}
+
+	.user-follows__lists{
+		@include layout-row;
+		align-items: flex-start;
+	}
+
+		.user-follows__lists > div{
+			margin: .5em 0;
+		}

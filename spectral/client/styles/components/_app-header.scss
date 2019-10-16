@@ -1,0 +1,63 @@
+// ============= //
+//  APP HEADER   //
+// ============= //
+
+
+
+
+/*------------------------------------*\
+  #MAIN
+\*------------------------------------*/
+
+.app-header{
+	padding: 1em;
+	min-height: 300px;
+	text-align: center;
+	background: $c-cream;
+	color: $c-black;
+	transition: $tr-fade;
+}
+
+	.app-header img{
+		max-width: 200px;
+	}
+
+	.app-header h1{
+		@include dark-header;
+	}
+
+
+/*------------------------------------*\
+  #HEADER-BUTTONS
+\*------------------------------------*/
+
+.app-header nav{
+	width: 100%;
+	@include display_flex;
+	@include justify-content(space-between);
+}
+
+	.app-header nav a{
+		background: $c-red;
+		color: $c-white;
+		padding: 5px 10px;
+		border-radius: 5px;
+		transition: $tr-fade;
+	}
+
+		.app-header nav a:hover{
+			background: $c-black;
+		}
+
+#login-buttons,
+.login-display-name,
+.single-login-button{
+	font-family: $f-main !important;
+}
+
+	#login-buttons-logout,
+	#login-buttons-twitter{
+		background: $c-red !important;
+		color: $c-white !important;
+		border: none !important;
+	}

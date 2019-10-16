@@ -1,0 +1,37 @@
+<template name="postStream">
+	<div class="post-stream">
+
+		{{#if postsStream}}
+			{{#each postsStream}}
+				{{> postStreamCard}}
+			{{/each}}
+
+		{{else}}
+			{{> postStreamNone}}
+		{{/if}}
+
+	</div>
+</template>
+
+<template name="postStreamCard">
+	<div class="post-stream__card animated bounceInRight">
+	
+		<div class="post-stream__card__colour-block" style="background: {{colour}};">
+			<div class="post-stream__card__colour-block__inner">
+				{{#if deleteActivated}}
+				<p class="post-stream__card__colour-block__inner__bin">delete</p>
+				{{else}}
+				<p class="post-stream__card__colour-block__inner__text">{{text}}</p>
+				{{/if}}
+			</div>
+		</div>
+	
+	</div>
+	
+</template>
+
+<template name="postStreamNone">
+	<div class="post-stream__card_none">
+		<h1>No posts!</h1>
+	</div>
+</template>

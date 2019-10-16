@@ -1,0 +1,22 @@
+<template name="userLiked">
+	<div class="user-profile">
+		<div class="user-profile-card">
+			<div class="user-profile-image" alt="{{username}}" style="background: url('{{profile.image}}') no-repeat center center; background-size: cover;"></div>
+			<div class="user-profile-info">
+				<h1>{{username}}'s liked posts</h1>
+				<div class="user-profile-buttons">
+					<button class="user-profile-liked-posts"><a href="/user/{{username}}">Posts by {{username}}</a></button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<div class="user-profile-posts">
+	{{#each postsUserLikes}}
+	<a href="/post/{{_id}}">
+		<img src="{{image}}" alt="{{title}}">
+	</a>
+	{{/each}}
+</div>
+
+</template>

@@ -1,0 +1,121 @@
+// ============= //
+//  USER PROFILE //
+// ============= //
+
+.user-profile{
+}
+
+.user-profile-card{
+  padding: 20px 0;
+  background: $c-box-1;
+  text-align: center;
+}
+
+  .user-profile-card__image{
+    margin: 0 auto;
+    padding: 10px 0;
+    width: $user-image-large;
+    height: $user-image-large;
+    border-radius: $user-image-large;
+  }
+
+  .user-profile-card__username{
+    margin: 10px 0;
+  }
+
+  .user-profile-card__level{
+    margin: 5px 0 10px;
+    color: $c-b-grey;
+  }
+
+  .user-profile-account,
+  .user-profile-follow{
+    @extend %button-chunk;
+  }
+
+.user-profile-bio{
+  text-align: center;
+}
+
+  .user-profile-bio__fullname{
+    font-weight: bold;
+  }
+
+.user-profile-stats{
+  padding: 20px 0;
+  background: $c-blue;
+  color: $c-white;
+  text-align: center;
+}
+
+  .user-profile-stats__title{
+    margin: 0;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+
+  .user-profile-stats__followers,
+  .user-profile-stats__following{
+    cursor: pointer;
+  }
+
+.user-profile-posts{
+  padding: 20px 0;
+  text-align: center;
+}
+
+  .user-profile-posts{
+    i, .user-profile-posts__title{
+      color: $c-pink;
+    }
+  }
+
+  .user-profile-posts__title{
+    margin: 0 0 10px 0;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+
+.profile-grid-heading{
+}
+
+// ============= //
+//   USER POSTS  //
+// ============= //
+
+.user-profile-posts__grid{
+  @extend %tile-grid;
+  @include responsive-grid;
+}
+
+// ============= //
+//    MODALS     //
+// ============= //
+
+.user-profile-following,
+.user-profile-followers{
+  background: $c-box-1;
+  padding: 20px 1rem;
+  text-align: center;
+
+  h1{
+    margin: 0;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+}
+
+.follow-list-item{
+  max-width: 30rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+  .follow-list-item__image{
+    flex-shrink: 0;
+    margin-right: 1em;
+    height: $user-image-small;
+    width: $user-image-small;
+    border-radius: $user-image-small;
+  }

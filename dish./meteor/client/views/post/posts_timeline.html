@@ -1,0 +1,65 @@
+<template name="postsTimeline">
+	<div class="posts-timeline">
+		{{#each postsTimeline}}
+			{{>postsTimelineCard}}
+		{{/each}}
+	</div>	
+</template>
+
+<template name="postsTimelineCard">
+	<div id="{{_id}}" class="timeline-card">
+
+		<div class="timeline-card__header">
+
+			<div class="timeline-card__header__user">
+				<a href="/user/{{username}}">
+					<div class="timeline-card__header__user__image" alt="{{username}}" style="background: url('{{userImage}}') no-repeat center center; background-size: cover;"></div>
+					<p>{{username}}</p>
+				</a>
+			</div>
+			<div class="timeline-card__header__time">
+				{{timeAgo createdAt}}
+			</div>
+
+		</div>
+		
+		<a href="/post/{{_id}}">
+			<div class="timeline-card__image" style="background: url('{{image}}') no-repeat center center; background-size: cover; height: 50vw; width: 100%;"></div>
+		</a>
+
+		<div class="timeline-card__info">
+
+			<div class="timeline-card__info__stats">
+				<div class="timeline-card__info__stats__discussion">
+					<div class="timeline-card__info__stats__discussion__likes">
+						<button class="post-like">{{{likeHeart postLiked}}}</button>
+						 <a href="/post/{{_id}}">{{postLikesCount}}<span class="drop-for-mobile"> likes</span></a>
+							<div class="timeline-card__info__stats__discussion__likes-list">
+								{{#each usersLikedPost}}
+									<a href="/user/{{username}}">{{username}}</a>
+								{{/each}}
+							</div>
+					</div>
+					<div class="timeline-card__info__stats__discussion__comments">
+						<button class="post-comment"><i class="fa fa-comment"></i></button>
+						<a href="/post/{{this._id}}#discussion">{{postCommentsCount}}<span class="drop-for-mobile"> comments</span></a>
+					</div>
+				</div>
+				<div class="timeline-card__info__stats__rating">
+					{{{ratingStars rating}}}
+				</div>
+			</div>
+
+			<div class="timeline-card__info__titles">
+				<a href="{{pathFor 'postPage'}}">
+				<h1>{{title}}</h1>
+				</a>
+				<a href="/restaurant/{{restaurant}}">
+					<h2>{{restaurant}}</h2>
+				</a>
+			</div>
+
+		</div>
+
+	</div>
+</template>

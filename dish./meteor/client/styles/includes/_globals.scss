@@ -1,0 +1,28 @@
+// ============= //
+//    GLOBALS    //
+// ============= //
+
+body{
+	@include fs-body;
+}
+
+:root, body{
+	min-height: 100%;
+}
+
+.page-wrap{
+	width: 100%;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.page-content{
+	flex: 1;
+}
+
+@media screen and (max-width: 600px){
+	.drop-for-mobile{
+		display: none;
+	}
+}

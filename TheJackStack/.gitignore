@@ -1,0 +1,13 @@
+.DS_Store
+.sass-cache
+node_modules
+
+# No need to include the actual build in the git repo
+_site
+
+# No neet to include these compiled styles and scripts
+js
+css
+
+# Images are often heavy, but feel free to take this out to keep them in your repo
+images

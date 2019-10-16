@@ -1,0 +1,13 @@
+// ============= //
+// DISCOVER GRID //
+// ============= //
+
+.discover-posts{
+	@extend %tile-grid;
+	@include responsive-grid;
+}
+
+.search-posts{
+	@extend %tile-grid;
+	@include responsive-grid;
+}

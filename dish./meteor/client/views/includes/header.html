@@ -1,0 +1,81 @@
+<template name="pageHeader">
+
+	<header class="page-header">
+
+		<div class="page-header__title">
+			<a href="{{pathFor 'homePage'}}">
+				<h1>dish<span class="page-header__title__dot">.</span></h1>
+			</a>
+		</div>
+
+		<div class="page-header__navigation__primary">
+			{{#if currentUser}}
+			<a class="page-header__navigation__primary__notifications" href="{{pathFor 'userNotifications'}}">
+				<i class="fa fa-comment"></i>
+				<span class="page-header__navigation__primary__notifications__count">
+					{{unreadNotificationCount}}
+				</span>
+			</a>
+			<a class="page-header__navigation__primary__discover" href="{{pathFor 'discover'}}">
+				<i class="fa fa-search"></i>
+			</a>
+			<a class="page-header__navigation__primary__profile" href="/user/{{currentUser.username}}">
+				<i class="fa fa-user"></i>
+			</a>
+			{{else}}
+			{{>loginButtons}}
+			{{/if}}
+		</div>
+
+		<div class="page-header__navigation__secondary">
+			{{#if currentUser}}
+			<a class="page-header__navigation__secondary__add" href="{{pathFor 'postAdd'}}">
+				<i class="fa fa-plus"></i>
+			</a>
+			{{/if}}
+		</div>
+
+	</header>
+
+</template>
+
+<template name="pageHeaderProfile">
+
+	<header class="page-header">
+
+		<div class="page-header__title">
+			<a href="{{pathFor 'homePage'}}">
+				<h1>dish<span class="page-header__title__dot">.</span></h1>
+			</a>
+		</div>
+
+		<div class="page-header__navigation__primary">
+			{{#if currentUser}}
+			<a class="page-header__navigation__primary__notifications" href="{{pathFor 'userNotifications'}}">
+				<i class="fa fa-comment"></i>
+				<span class="page-header__navigation__primary__notifications__count">
+					{{unreadNotificationCount}}
+				</span>
+			</a>
+			<a class="page-header__navigation__primary__discover" href="{{pathFor 'discover'}}">
+				<i class="fa fa-search"></i>
+			</a>
+			<a class="page-header__navigation__primary__profile" href="/user/{{currentUser.username}}">
+				<i class="fa fa-user"></i>
+			</a>
+			{{else}}
+			{{>loginButtons}}
+			{{/if}}
+		</div>
+
+		<div class="page-header__navigation__secondary">
+			{{#if currentUser}}
+			<a class="page-header__navigation__secondary__settings" href="{{pathFor 'settings'}}">
+				<i class="fa fa-cogs"></i>
+			</a>
+			{{/if}}
+		</div>
+
+	</header>
+
+</template>

@@ -1,0 +1,19 @@
+// ============= //
+//  POST STREAM  //
+// ============= //
+
+.post-stream{
+	max-width: 40em;
+	margin: 0 auto;
+	padding: 1em;
+	transition: $tr-fade;
+
+	/*&:hover{
+		filter: blur(100px);
+		-webkit-filter: blur(100px);
+	}*/
+
+	@media screen and (max-width: 40em){
+		padding: 0;
+	}
+}

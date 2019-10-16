@@ -1,0 +1,55 @@
+// ============= //
+//    POST ADD   //
+// ============= //
+
+.post-add{
+	@include content-column;
+	padding: 0 1em;
+}
+
+
+// ============= //
+//      IMAGE    //
+// ============= //
+
+#file-upload-button{
+	display: block;
+	width: 100%;
+	cursor: pointer;
+	@extend %button-chunk;
+}
+
+.file-upload-image{
+	display: block;
+	margin: .5em 0;
+	width: 100%;
+}
+
+
+// ============= //
+//      FORM     //
+// ============= //
+
+.post-add-form{
+	@extend %form-underscore;
+}
+
+.rating-add-box__control{
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+
+	.rating-add-box__control__minus,
+	.rating-add-box__control__plus{
+		 @extend %button-chunk;
+	}
+
+	.rating-add-box__control__indicator{
+		flex: 1;
+		text-align: center;
+		margin: 0 1em;
+		font-size: 20px;
+		color: $c-b-grey;
+		.on{ color: $c-pink; }
+	}

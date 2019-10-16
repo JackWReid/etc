@@ -1,0 +1,62 @@
+// ============= //
+//  RESTAURANTS  //
+// ============= //
+
+.restaurant-profile-image{
+	width: $user-image-large;
+	height: $user-image-large;
+	border-radius: $user-image-large;
+}
+
+.restaurant-buttons{
+	display: flex;
+	justify-content: center;
+}
+
+	.restaurant-buttons button{
+		@extend %button-chunk;
+	}
+
+.profile-grid-heading{
+	text-align: center;
+}
+
+// ============= //
+//    MODALS     //
+// ============= //
+
+.modal-restaurant-book{
+	@extend %modal-standard;
+}
+
+.modal-restaurant-book__buttons{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.modal-restaurant-book__header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	p{
+		font-weight: bold;
+		text-decoration: underline;
+		margin: 0;
+	}
+}
+
+.modal-button-web,
+.modal-button-phone{
+	@extend %button-chunk;
+	width: 100%;
+	margin: .5em 0;
+}
+
+	.modal-button-web{
+		background: $c-pink;
+	}
+
+	.modal-button-phone{
+		background: $c-blue;
+	}

@@ -1,0 +1,76 @@
+<template name="postAdd">
+	<div class="post-add">
+		<h1>Upload your dish</h1>
+
+		<input id="file-upload-button" type="file" accept="image/*" capture="camera" multiple="false">
+		
+		{{#if imageUrl}}
+			<img class="file-upload-image" src="{{imageUrl}}" alt="image preview">
+		{{/if}}
+
+		<form class="post-add-form">
+
+		<div class="rating-add-box">
+			<label>Rating: </label>
+			<div class="rating-add-box__control">
+				<button class="rating-add-box__control__minus"><i class="fa fa-minus"></i></button>
+				<div class="rating-add-box__control__indicator">{{{ratingStars ratingIndicator}}}</div>
+				<button class="rating-add-box__control__plus"><i class="fa fa-plus"></i></button>
+			</div>
+		</div>
+
+		<div class="title-add-box">
+			<label>Title: </label>
+			<input name="title" type="text" required>
+		</div>
+
+		<div class="restaurant-add-box">
+			<label>Restaurant: </label>
+			<input name="restaurant" type="text" required>
+		</div>
+
+		<div class="branch-add-box">
+			<label>Branch: </label>
+			<input name="location" type="text" required>
+		</div>
+
+		<div class="tags-add-box">
+			<label>Tags: </label>
+			<input name="tags" type="text" required>
+		</div>
+
+		<div class="category-select-box">
+			<label>Category: </label>
+			<select name="category">
+				<option value="bakery">Bakery</option>
+				<option value="bar">Bar</option>
+				<option value="breakfast">Breakfast</option>
+				<option value="burger">Burger Joint</option>
+				<option value="cafe">Café</option>
+				<option value="chinese">Chinese</option>
+				<option value="fast">Fast Food</option>
+				<option value="french">French Bistro</option>
+				<option value="fusion">Fusion</option>
+				<option value="grill">Grill</option>
+				<option value="indian">Indian</option>
+				<option value="italian">Italian</option>
+				<option value="japanese">Japanese</option>
+				<option value="korean">Korean</option>
+				<option value="lebanese">Lebanese</option>
+				<option value="mexican">Mexican</option>
+				<option value="moroccan">Moroccan</option>
+				<option value="pizzeria">Pizzeria</option>
+				<option value="pub">Pub Grub</option>
+				<option value="seafood">Seafood</option>
+				<option value="thai">Thai</option>
+				<option value="other">Other</option>
+			</select>
+		</div>
+
+		<div class="submit-box">
+			<input class="add-post-submit" type="submit" value="Share">
+		</div>
+
+		</form>
+	</div>
+</template>

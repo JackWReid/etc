@@ -1,0 +1,57 @@
+// ============= //
+//    BUTTONS    //
+// ============= //
+
+%button-invisible{
+	appearance: none;
+	outline: none;
+	border: none;
+	background: none;
+	padding: 0;
+}
+
+%button-blip{
+	padding: 2px 5px;
+	border-radius: $border-radius-small;
+	appearance: none;
+	outline: none;
+	border: none;
+	font-weight: bold;
+	background: $c-blue;
+	color: $c-white;
+}
+
+%button-chunk{
+	margin: 0 .5rem 0 0;
+	padding: .5rem 1rem;
+	text-align: center;
+	font-weight: bold;
+	appearance: none;
+	outline: none;
+	border: none;
+	color: $c-white;
+	background: $c-blue;
+	border-radius: $border-radius-small;
+	transition: $tr-standard;
+	&:hover{
+		background: $c-pink;
+	}
+}
+
+%button-chunk-pale{
+	margin: 0 .5rem 0 0;
+	padding: .5rem 1rem;
+	text-align: center;
+	font-weight: bold;
+	appearance: none;
+	outline: none;
+	border: none;
+	color: $c-white;
+	background: $c-blue;
+	border-radius: $border-radius-small;
+	transition: $tr-standard;
+	&:hover{
+		background: $c-white;
+		color: $c-pink;
+	}
+}

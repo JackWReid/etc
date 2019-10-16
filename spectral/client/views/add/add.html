@@ -1,0 +1,18 @@
+<template name="add">
+	<div class="add-post animated slideInUp">
+
+		<form class="add-post__form">
+			
+			<div class="add-post__form__colour" style="transition: all .3s ease-in-out; background: {{liveColourBox}};">
+				<input name="colour" class="add-post__form__colour__box" placeholder="what colour?" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'what colour?'" required>
+			</div>
+
+			<div class="add-post__form__text">
+				<input name="text" class="add-post__form__text__box" type="text" placeholder="how do you feel?" onfocus="this.placeholder = ''" onblur="this.placeholder = 'how do you feel?'" required>
+				<input type="submit" value="go">
+			</div>
+
+		</form>
+		
+	</div>
+</template>

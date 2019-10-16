@@ -1,0 +1,53 @@
+// ============= //
+//  USR SETTINGS //
+// ============= //
+
+.settings{
+	img{ width: 100%; }
+}
+
+.user-settings-form{
+}
+
+.settings-top{
+	padding: 10px 0;
+	text-align: center;
+	background: $c-box-1;
+
+	.user-profile-card__image{ margin-bottom: 10px; }
+
+	#file-upload-button{
+		width: 30rem;
+		max-width: 100%;
+		margin: 0 auto;
+	}
+}
+
+.settings-middle{
+	@include content-column;
+	padding: 0 1rem;
+	@extend %form-underscore;
+}
+
+.settings-bottom{
+	padding: 10px 0;
+	text-align: center;
+	background: $c-box-1;
+}
+
+	.button-submit-settings{
+		@extend %button-chunk;
+	}
+
+	.button-delete-account{
+		@extend %button-chunk;
+		margin: 100px auto 0;
+		max-width: 10rem;
+		font-size: 14px;
+		background: $c-red;
+		&:hover{ background: $c-red; }
+	}
+
+	.button-nevermind-account{
+		@extend %button-chunk;
+	}

@@ -1,0 +1,17 @@
+// ============= //
+//     MODALS    //
+// ============= //
+
+%modal-standard{
+	position: fixed;
+	top: 20vh;
+	left: 30vw;
+	right: 30vw;
+	width: 500px;
+	max-height: 60vh;
+	overflow-y: scroll;
+	background: $c-white;
+	border: 3px $c-pink solid;
+	border-radius: 5px;
+	padding: 5px;
+}

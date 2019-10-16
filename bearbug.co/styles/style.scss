@@ -1,0 +1,250 @@
+@import "colours",
+				"reset";
+
+// Breakpoints
+$br-tablet: 800px;
+
+// Typographic scale
+$type-1: 8px;
+$type-2: 16px;
+$type-3: 21px;
+$type-4: 28px;
+$type-5: 32px;
+$type-6: 38px;
+
+body{
+	max-width: 100vw;
+	overflow-x: hidden;
+  color: $c-water-ocean;
+  font-family: "Work Sans", sans-serif;
+}
+
+// Morphing site splash/header
+.site-header{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+	background: $c-water-shallows;
+	transition: background 1s ease-in-out,
+							height 1s ease-in-out 1s;
+}
+
+	.title-area{
+		display: block;
+		color: inherit;
+		z-index: 2;
+		text-decoration: none;
+	}
+
+		.title-area__text {
+		  margin: 0;
+		  font-size: $type-4;
+		  font-weight: 600;
+		}
+
+		.title-area__underline {
+		  font-size: $type-4;
+		  background: $c-water-atoll;
+		  width: 0px;
+		  height: 5px;
+		  margin-top: -3px;
+		  transition: width .5s ease-in-out;
+		}
+
+// Large disappearing welcome panel
+.message{
+	height: calc(100vh - 150px);
+	background: $c-water-ocean;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	transition: opacity 1s ease-in-out,
+							height 1s ease-in-out;
+	overflow-y: hidden;
+}
+
+	.message-paragraph{
+		margin: 0;
+		padding: 1em;
+		max-width: 30em;
+		font-size: $type-2;
+		line-height: 1.5em;
+		text-align: justify;
+		color: $c-beach;
+	}
+
+	.message-button{
+		margin-top: 20px;
+		padding: 5px;
+		background: $c-water-atoll;
+		color: $c-water-ocean;
+		font-size: $type-2;
+		border-radius: 5px;
+		box-shadow: 3px 3px 0 $c-beach;
+	}
+
+// Pagination section
+.pagination{
+	margin: 5em auto;
+	text-align: center;
+}
+
+	.pagination__previous,
+	.pagination__next{
+		margin: 0 1em;
+		font-weight: 600;
+		color: $c-water-shallows;
+		text-decoration: none;
+	}
+
+	.pagination__jump{
+		padding: 5px 10px;
+		font-weight: 600;
+		color: $c-beach;
+		background: $c-water-ocean;
+		text-decoration: none;
+		border-radius: 20px;
+	}
+
+	.pagination__current{
+		@extend .pagination__jump;
+		background: $c-water-shallows;
+	}
+
+// Content rules
+article{
+	margin: 5em 0 7em;
+	padding: 0 1em;
+
+	@media screen and (max-width: $br-tablet){
+		margin: 3em auto 5em;
+	}
+}
+
+		article img{
+			max-width: 100%;
+		}
+
+.articles--home{
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.article-photo{
+	max-width: 60em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+	.article-photo__title{
+		font-size: $type-5;
+		margin: .5em 0;
+
+		p{
+			margin: 0;
+		}
+	}
+
+	.article-photo__date{
+		font-size: $type-2;
+		margin: 0;
+		color: $c-water-atoll;
+	}
+
+.article-text{
+	max-width: 30em;
+}
+
+	.articles--permalink{
+		& > .article-text{
+			margin: 5em auto 7em;
+			max-width: 60em;
+		}
+
+		.article-text__title,
+		.article-text__date,
+		.article-text__content{
+			display: block;
+			max-width: 30rem;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+			.article-text__content{
+				p{
+					max-width: 30em;
+				}
+
+				figure{
+					max-width: 100%;
+				}
+			}
+	}
+
+	.article-text__title{
+		font-size: $type-5;
+		margin: .5em 0;
+	}
+
+	.article-text__date{
+		font-size: $type-2;
+		margin: 0;
+		color: $c-water-atoll;
+	}
+
+	.article-text__content p{
+		font-size: $type-2;
+		line-height: 1.7em;
+		text-align: justify;
+	}
+
+	.article-text__content figure{
+		display: block;
+	}
+
+		.article-text__content figure img{
+			display: block;
+		}
+
+	.read_more{
+		font-weight: bold;
+		color: $c-water-atoll;
+	}
+
+.article-quote{
+	max-width: 60em;
+}
+
+	.article-quote__content{
+		font-size: $type-4;
+		font-weight: 600;
+		max-width: 20em;
+		margin: .5em 0;
+		line-height: 1.5em;
+
+		&:before, &:after{
+			color: $c-water-atoll;
+		}
+
+		&:before{
+			content: "“";
+		}
+
+		&:after{
+			content: "”";
+		}
+	}
+
+	.article-quote__descriptor{
+		&:before{
+			content: "-";
+			margin-right: .5em;
+		}
+	}
+
+	.article-quote__date{
+		color: $c-water-atoll;
+	}

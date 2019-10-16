@@ -1,0 +1,49 @@
+<template name="restaurantProfile">
+
+<div class="user-profile">
+
+<div class="user-profile-card">
+	<img src="{{image}}" alt="{{name}}" class="restaurant-profile-image">
+	<div class="user-profile-info">
+		<h1>{{name}}</h1>
+		<p>{{bio}}</p>
+		<div class="restaurant-buttons">
+			<button class="restaurant-book">Book</button>
+		</div>
+	</div>
+</div>
+
+</div>
+
+<h2 class="profile-grid-heading">dishes taken at {{name}}</h2>
+
+<div class="user-profile-posts__grid">
+	{{#each postsAtRestaurant}}
+	<a href="/post/{{_id}}">
+		<div alt="{{title}}" style="background: url('{{image}}') no-repeat center center; background-size: cover;"></div>
+	</a>
+	{{/each}}
+</div>
+
+{{#if modalRestaurantBook}}
+	<div class="modal-restaurant-book">
+
+	<div class="modal-restaurant-book__header">
+		<p>Book a table at {{name}}</p>
+		<button class="modal-close"><i class="fa fa-times"></i></button>
+	</div>
+
+		<div class="modal-restaurant-book__buttons">
+			{{#if this.book.web}}
+				<button class="modal-button-web"><a href="{{this.book.web}}" target="_blank">Book Online</a></button>
+			{{/if}}
+
+			{{#if this.book.phone}}
+				<button class="modal-button-phone">Book by Phone: {{this.book.phone}}</button>
+			{{/if}}
+		</div>
+
+	</div>
+{{/if}}
+
+</template>

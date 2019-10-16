@@ -1,0 +1,13 @@
+{
+  "name": "dish",
+  "description": "tba.",
+  "version": "3.0.0",
+  "author": "Jack Reid",
+  "repository": "https://github.com/JackWReid/dish..git",
+  "homepage": "http://jackwreid.uk",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-sftp": "^0.1.5",
+    "gulp-watch": "^4.3.5"
+  }
+}

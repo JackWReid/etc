@@ -1,0 +1,35 @@
+html{
+	font-family: $f-primary;
+	color: $c-black;
+}
+
+.page-wrapper{
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 1em;
+}
+
+p{
+	max-width: 30em;
+	line-height: 1.5em;
+}
+
+pre{
+	max-width: 40em;
+	padding: 5px 10px;
+	background: $c-black;
+	border-radius: 5px;
+}
+
+code{
+	padding: 5px;
+	border-radius: 5px;
+	line-height: 1.5em;
+	font-family: monospace;
+	background: $c-black;
+	color: $c-white;
+}
+
+p a{
+	text-decoration: underline;
+}

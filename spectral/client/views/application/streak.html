@@ -1,0 +1,11 @@
+<template name="streak">
+	<div class="streak-line">
+		{{#if postsStream}}
+			{{#each postsStream}}
+				<div class="streak-line__item" style="background: {{colour}}"></div>
+			{{/each}}
+		{{else}}
+			NAH
+		{{/if}}
+	</div>	
+</template>

@@ -1,0 +1,75 @@
+// ============= //
+//     SEARCH    //
+// ============= //
+
+%search-discover{
+	width: 100%;
+	padding: 3em !important;
+
+	& > input{
+		width: 100%;
+		padding: 1em;
+		appearance: none;
+		border-image: none;
+		border-radius: 5px;
+		border: 3px $c-b-grey solid;
+		transition: $tr-standard;
+
+		&:focus{
+			border: 3px $c-pink solid;
+			box-shadow: none;
+			outline: none;
+		}
+	}
+}
+
+// ============= //
+//     FORMS     //
+// ============= //
+
+%input-underscore{
+	padding: .5em 0;
+	font-size: 1.1em;
+	appearance: none;
+	border: none;
+	transition: all .5s;
+	border-bottom: 2px $c-box-1 solid;
+	&:focus{
+		outline: none;
+		border-bottom: 2px $c-pink solid;
+	}
+}
+
+%label-underscore{
+	width: 7em;
+	font-weight: bold;
+}
+
+%form-underscore{
+	& > div{
+		display: flex;
+		align-items: center;
+		margin: .5em 0;
+	}
+
+	label{
+		width: 7em;
+		font-weight: bold;
+	}
+
+	select{
+		flex: 1;
+	}
+
+	input{
+		flex: 1;
+	}
+
+	input[type="text"]{
+		@extend %input-underscore;
+	}
+
+	input[type="submit"]{
+		@extend %button-chunk;
+	}
+}

@@ -1,0 +1,62 @@
+// ============= //
+//  STREAM CARD  //
+// ============= //
+
+.post-stream__card{
+	max-width: 30em;
+	margin: 0 auto;
+	overflow: hidden;
+	box-shadow: 10px 10px rgba(0,0,0,0.2);
+	cursor: pointer;
+
+	@media screen and (max-width: 40em){
+		max-width: 100%;
+		width: 100%;
+		box-shadow: none;
+	}
+}
+
+	.post-stream__card__colour-block{
+		height: 200px;
+		text-align: center;
+		@include display_flex;
+		@include justify-content(center);
+		@include align-items(center);
+	}
+
+		.post-stream__card__colour-block__inner{
+			display: block;
+			@include display_flex;
+			@include justify-content(center);
+			@include align-items(center);
+
+			padding: 10px;
+			background: $c-black;
+			color: $c-white;
+			transition: $tr-fade;
+		}
+
+			.post-stream__card__colour-block__inner:after{
+				position: relative;
+				background: $c-black;
+				width: 100%;
+				height: 100%;
+			}
+
+			.post-stream__card__colour-block__inner__text{
+				margin: 0;
+				opacity: 100%;
+				transition: $tr-fade;
+			}
+
+			.post-stream__card__colour-block__inner__bin{
+				margin: 0;
+				opacity: 100%;
+				transition: $tr-fade;
+			}
+
+			.post-stream__card__colour-block__inner:hover:after{
+				width: 100%;
+				height: 100%;
+			}
+

@@ -1,0 +1,25 @@
+// ============= //
+//     STREAK    //
+// ============= //
+
+.streak-line{
+	height: 20px;
+	width: 100%;
+	background: $c-black;
+	@include display-flex;
+	transition: $tr-fade;
+}
+
+	.streak-line:hover{
+		height: 50px;
+	}
+
+	.streak-line__item{
+		@include flex(1);
+		height: 100%;
+		transition: $tr-fade;
+	}
+		
+		.streak-line__item:hover{
+			@include flex(2);
+		}

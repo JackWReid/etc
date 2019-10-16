@@ -1,0 +1,42 @@
+/*====================================*\
+  #SETTINGS
+\*====================================*/
+
+
+
+
+/*------------------------------------*\
+  #COLOURS
+\*------------------------------------*/
+
+$c-white: #FFFFFF;
+$c-black: #3C363A;
+$c-cream: #EAE2E2;
+$c-red: #CC6449;
+$c-green: #9BBC8D;
+
+
+/*------------------------------------*\
+  #FONTS
+\*------------------------------------*/
+$f-main: Lato, sans-serif;
+
+@mixin dark-header{
+	margin: 10px 0;
+	font-family: $f-main;
+	font-weight: 900;
+	font-size: 50px;
+	text-transform: lowercase;
+	text-align: center;
+	color: $c-black;
+}
+
+@mixin basic-body{
+	font-family: $f-main;
+}
+
+/*------------------------------------*\
+  #TRANSITIONS
+\*------------------------------------*/
+
+$tr-fade: all .3s ease-in-out;

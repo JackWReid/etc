@@ -1,0 +1,81 @@
+<template name="userProfile">
+
+<div class="user-profile">
+
+	<div class="user-profile-card">
+		<div class="user-profile-card__image" alt="{{username}}" style="background: url('{{profile.image}}') no-repeat center center; background-size: cover;"></div>
+		<h1 class="user-profile-card__username">{{username}}</h1>
+		<p class="user-profile-card__level">Level {{profile.score}}</p>
+
+		{{#if userOwns}}
+		<button class="user-profile-account">Logout: {{>loginButtons}}</button>
+		{{else}}
+		{{#if currentUser}}
+		<button class="user-profile-follow">{{{followBuddyText userFollowed}}}</button>
+		{{/if}}
+		{{/if}}
+	</div>
+
+	<div class="user-profile-bio">
+		{{#if profile.name}}
+		<p class="user-profile-bio__fullname">{{profile.name}}</p>
+		{{/if}}
+
+		<p class="user-profile-bio__bio">{{profile.bio}}</p>
+	</div>
+
+	<div class="user-profile-stats">
+		<i class="fa fa-bar-chart fa-3x"></i>
+		<h1 class="user-profile-stats__title">stats</h1>
+		<p>Number of posts: {{numberOfPosts}}</p>
+		<p>Number of liked posts: {{numberOfLikedPosts}}</p>
+		<p class="user-profile-stats__followers">Followers: {{followerCount}}</p>
+		<p class="user-profile-stats__following">Following: {{followingCount}}</p>
+	</div>
+
+	{{#if followersPanel}}
+		<div class="user-profile-followers">
+			<i class="fa fa-users fa-3x"></i>
+			<h1 class="user-profile-followers__title">users who follow {{username}}</h1>
+			{{#each userFollowedBy}}
+				<a href="/user/{{username}}">
+					<div class="follow-list-item">
+						<div class="follow-list-item__image" alt="{{username}}" style="background: url('{{profile.image}}') no-repeat center center; background-size: cover;"></div>
+						<p>{{username}}</p>
+					</div>
+				</a>
+			{{/each}}
+		</div>
+	{{/if}}
+
+	{{#if followingPanel}}
+		<div class="user-profile-following">
+			<i class="fa fa-users fa-3x"></i>
+			<h1 class="user-profile-following__title">users {{username}} follows</h1>
+			{{#each userFollowing}}
+				<a href="/user/{{username}}">
+					<div class="follow-list-item">
+						<div class="follow-list-item__image" alt="{{username}}" style="background: url('{{profile.image}}') no-repeat center center; background-size: cover;"></div>
+						<p>{{username}}</p>
+					</div>
+				</a>
+			{{/each}}
+		</div>
+	{{/if}}
+
+	<div class="user-profile-posts">
+		<i class="fa fa-cutlery fa-3x"></i>
+		<h1 class="user-profile-posts__title">{{username}}'s posts</h1>
+
+		<div class="user-profile-posts__grid">
+		{{#each postsByUser}}
+			<a href="/post/{{_id}}">
+				<div alt="{{title}}" style="background: url('{{image}}') no-repeat center center; background-size: cover;"></div>
+			</a>
+		{{/each}}
+		</div>
+	</div>
+
+</div>
+
+</template>

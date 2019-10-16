@@ -1,0 +1,55 @@
+<template name="postPageEdit">
+	<div class="post-page-edit">
+
+	{{#if userOwns}}
+	<form action="submit" class="post-page-edit-form">
+		
+		<h1>Edit <input name="title" type="text" value="{{title}}"></h1>
+
+		{{#if imageUrl}}
+		<img src="{{imageUrl}}" alt="{{title}}">
+		{{else}}
+		<img src="{{image}}" alt="{{title}}">
+		{{/if}}
+
+		<input id="file-upload-button" type="file" accept="image/*" capture="camera" multiple="false">
+
+		<div>
+		<label>Rating: </label>
+			<input name="rating" type="range" min=1 max=5 value="{{rating}}" id="rating-slider" step="1" required>
+			<datalist id="rating-slider">
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+				<option>4</option>
+				<option>5</option>
+			</datalist>
+		</div>
+
+		<div class="restaurant-add-box">
+			<label>Restaurant: </label>
+			<input name="restaurant" type="text" value="{{restaurant}}" required>
+		</div>
+
+		<div class="branch-add-box">
+			<label>Branch: </label>
+			<input name="location" type="text" value="{{location}}" required>
+		</div>
+
+		<div class="tags-add-box">
+			<label>Tags: </label>
+			<input name="tags" type="text" required value="{{#each tags}}{{this}}, {{/each}}">
+		</div>
+
+		<input type="submit" value="Save Changes">
+
+	</form>
+	{{else}}
+
+	<h1>This post isn't yours.</h1>
+	<h2>That means you can't edit it, sorry!</h2>
+
+	{{/if}}
+
+	</div>
+</template>

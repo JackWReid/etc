@@ -1,0 +1,19 @@
+// ============= //
+//  NOTIFICATION //
+// ============= //
+
+.user-notifications{
+	@include content-column;
+}
+
+button.clear-notifications,
+button.read-notifications{
+	@extend %button-chunk;
+}
+
+	.notification-item{
+		font-size: 1.2em;
+		margin: 1em 0;
+		.user{ color: $c-pink; font-weight: bold; }
+		i{ color: $c-blue; }
+	}

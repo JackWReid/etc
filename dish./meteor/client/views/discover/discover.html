@@ -1,0 +1,117 @@
+<template name="discover">
+	<div class="discover">
+	
+		{{>discoverToggle}}
+		{{>discoverPlain}}
+
+	</div>
+</template>
+
+<template name="discoverPlain">
+	<div class="discover-posts">
+		{{#each discoverPosts}}
+			<a href="/post/{{_id}}">
+				<div style="background: url('{{image}}') no-repeat center center; background-size: cover;"></div>
+			</a>
+		{{/each}}
+	</div>
+</template>
+
+<template name="discoverPosts">
+	<div class="discover">
+
+		{{>discoverToggle}}
+
+		<div class="discover-search">
+			{{> esInput index="posts" placeholder="Search posts..." }}
+		</div>
+
+
+		<div class="search-posts">
+			{{#esEach index="posts"}}
+				<a href="/post/{{_id}}">
+					<div style="background: url('{{image}}') no-repeat center center; background-size: cover;"></div>
+				</a>
+			{{/esEach}}
+
+			{{#ifEsIsSearching index="posts"}}
+				{{>discoverLoading}}
+			{{/ifEsIsSearching}}
+	</div>
+
+	</div>
+</template>
+
+<template name="discoverUsers">
+	<div class="discover">
+
+		{{>discoverToggle}}
+
+		<div class="discover-search">
+			{{> esInput index="users" placeholder="Search users..." }}
+		</div>
+
+
+		<div class="search-users">
+			{{#esEach index="users"}}
+				<a href="/user/{{_id}}">
+					<img src="{{image}}" alt="">
+				</a>
+			{{/esEach}}
+
+			{{#ifEsIsSearching index="users"}}
+				{{>discoverLoading}}
+			{{/ifEsIsSearching}}
+	</div>
+
+	</div>
+</template>
+
+<template name="discoverRestaurants">
+	<div class="discover">
+
+		{{>discoverToggle}}
+
+		<div class="discover-search">
+			{{> esInput index="restaurants" placeholder="Search restaurants..." }}
+		</div>
+
+
+		<div class="search-restaurants">
+			{{#esEach index="restaurants"}}
+				<a href="/restaurant/{{name}}">
+				<div class="restaurant-result">
+					<img src="{{image}}" alt="">
+					<div class="restaurant-result__info">
+						<h1>{{name}}</h1>
+						<p>{{bio}}</p>
+					</div>
+				</div>
+				</a>
+			{{/esEach}}
+
+			{{#ifEsIsSearching index="restaurants"}}
+				{{>discoverLoading}}
+			{{/ifEsIsSearching}}
+	</div>
+
+	</div>
+</template>
+
+<template name="discoverToggle">
+	<div class="discover-toggle">
+		<button><a href="{{pathFor 'discover'}}">Discover</a></button>
+		<button><a href="{{pathFor 'discoverRestaurants'}}">Restaurants</a></button>
+		<button><a href="{{pathFor 'discoverPosts'}}">Posts</a></button>
+	</div>
+</template>
+
+<template name="discoverLoading">
+	<div class="spinner">
+		<div class="spinner-container container1">
+			<div class="rect1"></div>
+			<div class="rect2"></div>
+			<div class="rect3"></div>
+		</div>
+	</div>
+</template>

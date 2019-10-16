@@ -1,0 +1,8 @@
+.post-page-edit{
+	@include content-column;
+}
+
+.post-page-edit-form{
+	@extend %form-underscore;
+	margin-bottom: 2em;
+}

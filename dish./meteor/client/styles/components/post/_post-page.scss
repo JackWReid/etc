@@ -1,0 +1,158 @@
+// ============= //
+//   POST PAGE   //
+// ============= //
+
+.post-page{
+	@include content-column;
+	padding: 0 1em;
+}
+
+.post-page__header{
+	@include layout-row;
+}
+
+	.post-page__header__user__image{
+		width: $user-image-medium;
+		height: $user-image-medium;
+		border-radius: $user-image-medium;
+	}
+
+.post-item-image{
+	cursor: pointer;
+	width: 100%;
+}
+
+.post-item{
+	.post-comments, .post-likes{
+		color: $c-blue;
+		font-weight: bold;
+	}
+}
+
+// ============= //
+//   REST INFO   //
+// ============= //
+
+.post-restaurant-info{
+	@include layout-row;
+	padding: 0 0 1em;
+}
+
+	.restaurant-name{
+		color: $c-b-grey;
+		font-weight: bold;
+	}
+
+	.post-category{
+		color: $c-b-grey;
+		font-weight: bold;
+	}
+
+.post-delete,
+.post-edit{
+	@extend %button-blip;
+}
+
+// ============= //
+//      TAGS     //
+// ============= //
+
+.post-tags{
+	color: $c-pink;
+	font-weight: bold;
+}
+
+// ============= //
+//     MODAL     //
+// ============= //
+
+.modal-post-likes{
+	@extend %modal-standard;
+}
+
+.modal-post-likes__header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	p{
+		font-weight: bold;
+		text-decoration: underline;
+		margin: 0;
+	}
+}
+
+.modal-close{
+	@extend %button-blip;
+}
+
+// ============= //
+//    COMMENTS   //
+// ============= //
+
+.post-comments-section{
+	margin: 3em 0 1em;
+}
+
+.comment-item{
+	margin: 1em 0 2em;
+	width: 100%;
+	display: flex;
+}
+
+	.comment-image{
+		flex-shrink: 0;
+		width: $user-image-medium;
+		height: $user-image-medium;
+		border-radius: $user-image-medium;
+		margin: 0 1em;
+	}
+
+	.comment-body{
+		width: 100%;
+	}
+
+	.comment-head{
+		width: 100%;
+		@include layout-row;
+		p{ margin: 0; }
+		font-weight: bold;
+	}
+
+		.comment-user{
+			color: $c-blue;
+		}
+
+		.comment-time{
+			color: $c-b-grey;
+			@media screen and (max-width: 600px){
+				display: none;
+			}
+		}
+
+	.comment-body > p{
+		margin: 0;
+	}
+
+	.delete-comment{
+		@extend %button-blip;
+	}
+
+.comments-add{
+	width: 100%;
+}
+
+	.comments-add input[name="content"]{
+		width: 100%;
+		padding: 1em;
+		appearance: none;
+		border-image: none;
+		border-radius: 5px;
+		border: 3px $c-b-grey solid;
+		transition: all .5s;
+
+		&:focus{
+			border: 3px $c-pink solid;
+			box-shadow: none;
+			outline: none;
+		}
+	}

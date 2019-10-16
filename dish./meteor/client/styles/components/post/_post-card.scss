@@ -1,0 +1,108 @@
+// ============= //
+// TIMELINE CARD //
+// ============= //
+
+.timeline-card{
+	@include content-column;
+	margin: 1em auto;
+	padding: 0 2em;
+	background: $c-box-1;
+	@media screen and (max-width: 600px){
+		padding: 0 1em;
+	}
+}
+
+.timeline-card__header{
+	@include layout-row;
+}
+
+	.timeline-card__header__user{
+		padding: 1em 0;
+		a{
+			display: flex;
+			align-items: center;
+		}
+		p{
+			margin: 0 0 0 .5em;
+		}
+	}
+
+		.timeline-card__header__user__image{
+			width: $user-image-small;
+			height: $user-image-small;
+			border-radius: $user-image-small;
+		}
+
+.timeline-card__image{
+	width: 100%;
+	cursor: pointer;
+	img{
+		width: 100%;
+	}
+}
+
+.timeline-card__info{
+	width: 100%;
+	padding: .5em 0;
+}
+
+	.timeline-card__info__stats{
+		@include layout-row;
+		align-items: center;
+	}
+
+		.timeline-card__info__stats__discussion{
+			@include layout-row;
+			color: $c-blue;
+			font-weight: bold;
+			& > div{
+				cursor: pointer;
+				margin-right: 1em;
+				font-size: 1.1em;
+			}
+		}
+
+			.post-like,
+			.post-comment{
+				@extend %button-invisible;
+				i.on{ color: $c-pink; }
+			}
+
+			.timeline-card__info__stats__discussion__likes{
+				position: relative;
+			}
+
+				// Not actually in use at the moment.
+				.timeline-card__info__stats__discussion__likes-list{
+					display: none;
+					position: absolute;
+					top: 25px;
+					left: 0;
+					padding: 2px 8px;
+					background: $c-black;
+					color: $c-white;
+					font-weight: normal;
+					font-size: 12px;
+					border-radius: 5px;
+
+						a{
+							display: block;
+						}
+				}
+
+					.likes-list-active{
+						display: block;
+					}
+
+		.timeline-card__info__stats__rating{
+			font-size: 1.1em;
+			color: $c-b-grey;
+			.on{ color: $c-pink; }
+		}
+
+	.timeline-card__info__titles{
+		h1, h2{
+			font-weight: normal;
+			margin: .3em 0 .4em;
+		}
+	}

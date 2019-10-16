@@ -1,0 +1,101 @@
+// ============= //
+//  SITE HEADER  //
+// ============= //
+
+.page-header{
+	width: 100%;
+	height: 60px;
+
+	font-family: $f-head;
+	font-weight: bold;
+	color: $c-white;
+	background: $c-blue;
+}
+
+.page-header__title{
+	position: absolute;
+	left: 50%;
+	top: 6px;
+	margin-left: -40px;
+}
+
+	.page-header__title h1{
+		margin: 0;
+		font-size: 35px;
+	}
+
+	.page-header__title__dot{
+		color: $c-pink;
+		transition: $tr-standard;
+	}
+
+		.page-header__title:hover{
+			.page-header__title__dot{
+				color: $c-white;
+			}
+		}
+
+.page-header #login-buttons{
+	margin-top: 3px;
+	@extend %button-chunk;
+}
+
+.page-header__navigation__primary{
+	position: absolute;
+	left: 15px;
+	top: 10px;
+}
+
+.page-header__navigation__secondary{
+	position: absolute;
+	right: 15px;
+	top: 13px;
+}
+
+	.page-header__navigation__primary,
+	.page-header__navigation__secondary{
+		i{
+			font-size: 35px;
+			transition: $tr-standard;
+			&:hover{ color: $c-pink; }
+		}
+	}
+
+	.page-header__navigation__primary > *{
+		margin-right: 10px;
+	}
+
+	.page-header__navigation__primary__notifications__count{
+		position: absolute;
+		left: 25px;
+		top: 0px;
+		padding: 0 3px;
+		border-radius: 18px;
+		background: $c-pink;
+	}
+
+@media screen and (max-width: 500px){
+	.page-header{
+		height: auto;
+		display: flex;
+		align-items: center;
+		padding: 5px 10px;
+	}
+
+	.page-header__title,
+	.page-header__navigation__primary,
+	.page-header__navigation__secondary{
+		position: static;
+	}
+
+	.page-header__title{
+		margin: 0 20px 0 0;
+		background: $c-blue;
+	}
+
+	.page-header__navigation__secondary{ margin-top: 4px; }
+
+	.page-header__navigation__primary__notifications__count{
+		display: none;
+	}
+}

@@ -1,0 +1,37 @@
+<template name="userFollows">
+	<div class="user-follows">
+
+		<h1>{{username}}</h1>
+
+		<div class="user-follows__lists">
+
+			<div class="user-follows_following">
+				<h4>People {{username}} follows</h4>
+				{{#each userFollowing}}
+					{{>userFollowItem}}
+				{{/each}}
+			</div>
+
+			<div class="user-follows__followed">
+				<h4>People following {{username}}</h4>
+				{{#each userFollowedBy}}
+					{{>userFollowItem}}
+				{{/each}}
+			</div>
+		
+		</div>
+
+	</div>
+</template>
+
+<template name="userFollowItem">
+	<div class="user-badge">
+		<a href="/user/{{username}}">
+			<img src="{{userImage}}" alt="{{username}}" class="user-image">
+			<span>{{username}}</span>
+		</a>
+			{{#unless userOwnPost}}
+			<button class="user-follow">{{{followBuddy userFollowed}}}</button>
+			{{/unless}}
+	</div>
+</template>

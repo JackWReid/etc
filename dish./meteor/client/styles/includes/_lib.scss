@@ -1,0 +1,120 @@
+// ============= //
+//      LIB      //
+// ============= //
+
+
+// ============= //
+//    COLOURS    //
+// ============= //
+
+$c-black: #222;
+$c-white: #FFF;
+$c-blue: #2E3161;
+$c-pink: #A83E78;
+$c-red: #D0021B;
+$c-box-1: #F6F6F6;
+$c-b-grey: #5D536F;
+
+
+
+// ============= //
+//   DIMENSIONS  //
+// ============= //
+
+$border-radius-small: 5px;
+$user-image-small: 35px;
+$user-image-medium: 60px;
+$user-image-large: 200px;
+$opacity-mid: 0.7;
+
+// ============= //
+//   ANIMATIONS  //
+// ============= //
+
+$tr-standard: all .3s;
+
+
+
+// ============= //
+//  FONT STACKS  //
+// ============= //
+
+@font-face {
+  font-family: 'AvenirBold';
+  src:
+  url('/fonts/AvenirNext-Bold.eot?#iefix') format('embedded-opentype'), 
+  url('/fonts/AvenirNext-Bold.woff') format('woff'),
+  url('/fonts/AvenirNext-Bold.ttf')  format('truetype'),
+  url('/fonts/AvenirNext-Bold.svg#AvenirNext-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+$baseline: 16px;
+
+$f-main: 'Open Sans', sans-serif;
+$f-head: 'AvenirBold', sans-serif;
+
+@mixin fs-body{
+	font-size: $baseline;
+	font-family: $f-main;
+	font-style: normal;
+	font-weight: normal;
+}
+
+@mixin fs-title{
+	font-family: $f-head;
+	font-style: normal;
+	font-weight: bold;
+}
+
+
+// ============= //
+//     MIXINS    //
+// ============= //
+
+// Flexbox row
+@mixin layout-row{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+// Content column
+@mixin content-column{
+	max-width: 40em;
+	margin: 0 auto;
+}
+
+@mixin content-column-wide{
+	max-width: 60em;
+	margin: 0 auto;
+}
+
+// Mobile grid collapse
+@mixin responsive-grid{
+	@media screen and (max-width: 900px){
+		a, a img{
+			width: 33.33vw;
+		}
+		a{
+			height: 33.33vw;
+		}
+	}
+	@media screen and (max-width: 650px){
+		a, a img{
+			width: 50vw;
+		}
+		a{
+			height: 50vw;
+		}
+	}
+	@media screen and (max-width: 500px){
+		a, a img{
+			width: 100vw;
+		}
+		a{
+			height: 100vw;
+		}
+	}
+}

@@ -1,0 +1,10 @@
+# Site settings
+title: The Jack Stack
+description: > # Build websites more simply with modern web technologies.
+baseurl: ""
+url: ""
+
+# Build settings
+markdown: kramdown
+permalink: none
+exclude: [node_modules]

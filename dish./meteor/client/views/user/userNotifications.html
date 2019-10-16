@@ -1,0 +1,18 @@
+<template name="userNotifications">
+	<div class="user-notifications">
+		<div class="notification-stream">
+		<header>
+			<h1>Notifications</h1>
+			<button class="read-notifications">Mark All As Read</button>
+			<button class="clear-notifications">Clear All</button>
+		</header>
+			{{#each notifications}}
+				<div class="notification-item">
+					<a href="{{url}}">
+						{{{renderNotification}}}
+					</a>
+				</div>
+			{{/each}}	
+		</div>
+	</div>
+</template>

@@ -1,0 +1,83 @@
+// ============= //
+//      ADD      //
+// ============= //
+
+.add-post{
+	@include display_flex;
+	@include flex-direction(column);
+	@include align-items(center);
+	@include basic-body;
+}
+
+	.add-post__form{
+		width: 40em;
+		margin: 3em;
+		box-shadow: 10px 10px rgba(0,0,0,0.2);
+
+		@media screen and (max-width: 40em){
+			width: 100%;
+			margin: 0;
+			box-shadow: none;
+		}
+	}
+
+		.add-post__form__colour{
+			@include display_flex;
+			@include justify-content(center);
+			@include align-items(center);
+			width: 100%;
+			height: 200px;
+			background: $c-red;
+		}
+
+			.add-post__form__colour__box{
+				padding: 5px;
+				text-align: center;
+				appearance: none;
+				-webkit-appearance: none;
+				border: none;
+				background: $c-cream;
+				transition: $tr-fade;
+			}
+
+				.add-post__form__colour__box:focus{
+					outline: none;
+					background: $c-black;
+					color: $c-white;
+				}
+
+		.add-post__form__text{
+			@include display_flex;
+			width: 100%;
+		}
+
+			.add-post__form__text input{
+				display: block;
+				padding: .7em 1em;
+				font-size: 30px;
+				margin: 0;
+				appearance: none;
+				-webkit-appearance: none;
+				border: none;
+			}
+
+				.add-post__form__text input[type="text"]{
+					@include flex(1);
+					border-image: none;
+					padding: 5px;
+					text-align: center;
+					background: $c-cream;
+					transition: $tr-fade;
+				}
+
+					.add-post__form__text input[type="text"]:focus{
+						background: $c-black;
+						color: $c-white;
+						outline: none;
+					}
+
+				.add-post__form__text input[type="submit"]{
+					background: $c-black;
+					color: $c-white;
+					font-weight: 700;
+				}

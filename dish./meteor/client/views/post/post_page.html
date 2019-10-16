@@ -1,0 +1,123 @@
+<template name="postPage">
+	<div class="post-page">
+
+		<div class="timeline-card__header">
+
+			<div class="timeline-card__header__user">
+				<a href="/user/{{username}}">
+					<div class="timeline-card__header__user__image" alt="{{username}}" style="background: url('{{userImage}}') no-repeat center center; background-size: cover;"></div>
+					<meta property="og:image" content="http://food.png">
+					<p>{{username}}</p>
+				</a>
+			</div>
+			<div class="timeline-card__header__time">
+				{{timeAgo createdAt}}
+				{{#if userOwns}}
+					<a href="/post/{{_id}}/edit"><button class="post-edit"><i class="fa fa-pencil"></i></button></a>
+					<button class="post-delete"><i class="fa fa-trash-o"></i></button>
+				{{/if}}
+			</div>
+
+		</div>
+		
+		<img class="timeline-card_image" src="{{image}}" alt="{{title}}">
+
+		<div class="timeline-card__info">
+
+			<div class="timeline-card__info__stats">
+				<div class="timeline-card__info__stats__discussion">
+					<div class="timeline-card__info__stats__discussion__likes">
+						<button class="post-like">{{{likeHeart postLiked}}}</button>
+						 <a href="/post/{{_id}}">{{postLikesCount}}<span class="drop-for-mobile post-likes-count"> likes</span></a>
+					</div>
+					<div class="timeline-card__info__stats__discussion__comments">
+						<button class="post-comment"><i class="fa fa-comment"></i></button>
+						<a href="/post/{{this._id}}#discussion">{{postCommentsCount}}<span class="drop-for-mobile"> comments</span></a>
+					</div>
+				</div>
+				<div class="timeline-card__info__stats__rating">
+					{{{ratingStars rating}}}
+				</div>
+			</div>
+
+			<div class="timeline-card__info__titles">
+				<a href="{{pathFor 'postPage'}}">
+				<h1>{{title}}</h1>
+				</a>
+				<a href="/restaurant/{{restaurant}}">
+					<h2>{{restaurant}}</h2>
+				</a>
+			</div>
+
+			<div class="post-restaurant-info">
+				<div class="post-restaurant">
+					<span class="restaurant-name">{{location}}</span>
+				</div>
+				<div class="post-category">
+					{{postCategory}}
+				</div>
+			</div>
+
+			<div class="post-tags">
+				{{#each tags}}
+					<span class="tag-list__item"><a href="/tag/{{this}}">#{{this}}</a></span>
+				{{/each}}
+			</div>
+
+			<div class="post-comments-section">
+				{{>comments}}
+			</div>
+
+		</div>
+	</div>
+
+{{#if modalPostLikes}}
+	<div class="modal-post-likes">
+		
+	<div class="modal-post-likes__header">
+		<p>Users who like this post</p>
+		<button class="modal-close"><i class="fa fa-times"></i></button>
+	</div>
+
+		<div class="modal-post-likes__list">
+			{{#each usersLikedPost}}
+				<a href="/user/{{username}}">
+					<div class="follow-list-item">
+						<img src="{{profile.image}}" alt="{{username}}">
+						<p>{{username}}</p>
+					</div>
+				</a>
+			{{/each}}
+		</div>
+
+	</div>
+{{/if}}
+
+</template>
+
+<template name="comments">
+	<div class="comments-stream">
+		{{#each comments}}
+			<div class="comment-item">
+				<div class="comment-image" alt="{{username}}" style="background: url('{{commentsImage}}') no-repeat center center; background-size: cover;"></div>
+				<div class="comment-body">
+					<div class="comment-head">
+						<p class="comment-user">{{postedBy}}</p>
+						<p class="comment-time">{{timeAgo createdAt}}</p>
+					</div>
+					<p>{{content}}</p>
+					{{#if userOwns}}
+						<button class="delete-comment"><i class="fa fa-trash-o"></i></button>
+					{{/if}}
+				</div>
+			</div>
+		{{/each}}
+	</div>
+	{{#if currentUser}}
+	<form class="comments-add">
+		<input name="content" type="text" placeholder="Post comment...">
+	</form>
+	{{else}}
+	<br><br><br>
+	{{/if}}
+</template>

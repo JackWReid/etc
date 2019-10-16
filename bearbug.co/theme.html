@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>{Title}</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" type="image/png" href="{Favicon}">
+		<meta name="if:Show Button" content="1"/>
+		<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,600,700' rel='stylesheet' type='text/css'>
+		<style data-inject="styles">html,body{margin:0;padding:0}img{max-width:100vw}figure{margin:0;padding:0}button{font-family:inherit;cursor:pointer;-webkit-appearance:none;-moz-appearance:none;appearance:none;border:none;outline:none}a{color:inherit;text-decoration:none}body{max-width:100vw;overflow-x:hidden;color:#2D3863;font-family:"Work Sans", sans-serif}.site-header{width:100vw;height:100vh;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;background:#2982A9;-webkit-transition:background 1s ease-in-out,height 1s ease-in-out 1s;transition:background 1s ease-in-out,height 1s ease-in-out 1s}.title-area{display:block;color:inherit;z-index:2;text-decoration:none}.title-area__text{margin:0;font-size:28px;font-weight:600}.title-area__underline{font-size:28px;background:#6EB4B5;width:0px;height:5px;margin-top:-3px;-webkit-transition:width 0.5s ease-in-out;transition:width 0.5s ease-in-out}.message{height:calc(100vh - 150px);background:#2D3863;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-transition:opacity 1s ease-in-out,height 1s ease-in-out;transition:opacity 1s ease-in-out,height 1s ease-in-out;overflow-y:hidden}.message-paragraph{margin:0;padding:1em;max-width:30em;font-size:16px;line-height:1.5em;text-align:justify;color:#F9CC7B}.message-button{margin-top:20px;padding:5px;background:#6EB4B5;color:#2D3863;font-size:16px;border-radius:5px;box-shadow:3px 3px 0 #F9CC7B}.pagination{margin:5em auto;text-align:center}.pagination__previous,.pagination__next{margin:0 1em;font-weight:600;color:#2982A9;text-decoration:none}.pagination__jump,.pagination__current{padding:5px 10px;font-weight:600;color:#F9CC7B;background:#2D3863;text-decoration:none;border-radius:20px}.pagination__current{background:#2982A9}article{margin:5em 0 7em;padding:0 1em}@media screen and (max-width: 800px){article{margin:3em auto 5em}}article img{max-width:100%}.articles--home{max-width:1000px;margin:0 auto}.article-photo{max-width:60em;margin-left:auto;margin-right:auto}.article-photo__title{font-size:32px;margin:.5em 0}.article-photo__title p{margin:0}.article-photo__date{font-size:16px;margin:0;color:#6EB4B5}.article-text{max-width:30em}.articles--permalink>.article-text{margin:5em auto 7em;max-width:60em}.articles--permalink .article-text__title,.articles--permalink .article-text__date,.articles--permalink .article-text__content{display:block;max-width:30rem;margin-left:auto;margin-right:auto}.articles--permalink .article-text__content p{max-width:30em}.articles--permalink .article-text__content figure{max-width:100%}.article-text__title{font-size:32px;margin:.5em 0}.article-text__date{font-size:16px;margin:0;color:#6EB4B5}.article-text__content p{font-size:16px;line-height:1.7em;text-align:justify}.article-text__content figure{display:block}.article-text__content figure img{display:block}.read_more{font-weight:bold;color:#6EB4B5}.article-quote{max-width:60em}.article-quote__content{font-size:28px;font-weight:600;max-width:20em;margin:.5em 0;line-height:1.5em}.article-quote__content:before,.article-quote__content:after{color:#6EB4B5}.article-quote__content:before{content:"“"}.article-quote__content:after{content:"”"}.article-quote__descriptor:before{content:"-";margin-right:.5em}.article-quote__date{color:#6EB4B5}
+</style>
+		<style>{CustomCSS}</style>
+	</head>
+
+	<body>
+			<header class="site-header">
+				<a class="title-area" href="{BlogURL}">
+					<h1 class="title-area__text">{Title}</h1>
+					<div class="title-area__underline"></div>
+				</a>
+			</header>
+
+			{block:IndexPage}
+			{block:ShowDescription}
+			<section class="message">
+				<p class="message-paragraph">
+					{Description}
+				</p>
+				{block:IfShowButton}
+				<button class="message-button" onClick="dismissMessage()">
+					Okay!
+				</button>
+				{/block:IfShowButton}
+			</section>
+			{/block:ShowDescription}
+			{/block:IndexPage}
+
+
+			{block:IndexPage}
+			<section class="articles--home">
+			{/block:IndexPage} 
+
+			{block:PermalinkPage}
+			<section class="articles--permalink">
+			{/block:PermalinkPage}
+
+			{block:Posts}
+
+				{block:Text}
+				<article class="article-text">
+					<h1 class="article-text__title"><a href="{Permalink}">{Title}</a></h1>
+					<time class="article-text__date">
+					{block:Date}
+						{DayOfMonth}<sup>{DayOfMonthSuffix}</sup> {Month}
+					{/block:Date}
+					</time>
+					<div class="article-text__content">
+						{Body}
+					</div>
+				</article>
+				{/block:Text}
+
+				{block:Photo}
+				<article class="article-photo">
+					<a href="{Permalink}">
+					<img src="{PhotoURL-HighRes}" alt="{PhotoAlt}" class="article-photo__image">
+					<h1 class="article-photo__title">{Caption}</h1>
+					</a>
+					<time class="article-photo__date">
+					{block:Date}
+						{DayOfMonth}<sup>{DayOfMonthSuffix}</sup> {Month}
+					{/block:Date}
+					</time>
+				</article>
+				{/block:Photo}
+
+				{block:Quote}
+				<article class="article-quote">
+					<a href="{Permalink}">
+					<p class="article-quote__content">{Quote}</p>
+					</a>
+					{block:Source}
+					<p class="article-quote__descriptor">{Source}</p>
+					{/block:Source}
+				</article>
+				{/block:Quote}
+
+			{/block:Posts}
+			</section>
+
+			{block:Pagination}
+			<section class="pagination">
+      	{block:PreviousPage}
+        <a class="pagination__previous" href="{PreviousPage}">Previous</a>
+        {/block:PreviousPage}
+        
+        {block:JumpPagination length="5"}
+        	{block:CurrentPage}
+          <span class="pagination__current">{PageNumber}</span>
+          {/block:CurrentPage}
+        	{block:JumpPage}
+          <a class="pagination__jump" href="{URL}">{PageNumber}</a>
+          {/block:JumpPage}
+        {/block:JumpPagination}
+
+       	{block:NextPage}
+          <a class="pagination__previous" href="{NextPage}">Next</a>
+	      {/block:NextPage}
+			</section>
+			{/block:Pagination}
+
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script data-inject="scripts">$(document).ready(function(){var e=window.location.pathname,i=$(window).scrollTop();i>50?(morph.quickHideMessage(),morph.quickBecomeHeader()):1!==e.length?(morph.quickHideMessage(),morph.quickBecomeHeader(),morph.underlineTitle(),morph.fadeBackground()):(morph.slowBecomeHeader(),morph.underlineTitle(),morph.fadeBackground())}),$(window).scroll(function(){var e=$(window).scrollTop();e>50&&morph.slowHideMessage()}),morph={underlineTitle:function(){$(".title-area__underline").width("115px")},fadeBackground:function(){$(".site-header").css("background","#F9CC7B")},slowBecomeHeader:function(){$(".site-header").css("transition","background 1s ease-in-out, height 1s ease-in-out 1s"),$(".site-header").height("150px")},quickBecomeHeader:function(){$(".site-header").css("transition","none"),$(".site-header").height("150px")},slowHideMessage:function(){$(".message").css("transition","opacity 1s ease-in-out, height 1s ease-in-out"),$(".message").css("height","200px")},quickHideMessage:function(){$(".message").css("transition","none"),$(".message").css("height","200px")}};</script>
+	</body>
+</html>

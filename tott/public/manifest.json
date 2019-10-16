@@ -1,0 +1,15 @@
+{
+  "short_name": "Tott",
+  "name": "Tott",
+  "icons": [
+    {
+      "src": "favicon.png",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "index.html",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#FFF",
+  "theme_color": "#357EDD"
+}

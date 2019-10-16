@@ -1,0 +1,78 @@
+cities:
+  -
+    name: "Atlanta"
+    disease: "Blue"
+    edges:
+      - "Washington"
+      - "Chicago"
+      - "Miami"
+  -
+    name: "Washington"
+    disease: "Blue"
+    edges:
+      - "Atlanta"
+      - "Miami"
+      - "Montreal"
+      - "New York"
+  -
+    name: "Chicago"
+    disease: "Blue"
+    edges:
+      - "Atlanta"
+      - "Mexico City"
+      - "San Francisco"
+      - "Los Angeles"
+  -
+    name: "Montreal"
+    disease: "Blue"
+    edges:
+      - "Chicago"
+      - "New York"
+      - "Washington"
+  -
+    name: "New York"
+    disease: "Blue"
+    edges:
+      - "Montreal"
+      - "Washington"
+      #- "London"
+      #- "Madrid"
+  -
+    name: "Los Angeles"
+    disease: "Yellow"
+    edges:
+      - "San Francisco"
+      - "Chicago"
+      - "Mexico City"
+      #- "Sydney"
+  -
+    name: "San Francisco"
+    disease: "Blue"
+    edges:
+      - "Chicago"
+      - "Los Angeles"
+      #- "Tokyo"
+      #- "Manila"
+  -
+    name: "Miami"
+    disease: "Yellow"
+    edges:
+      - "Washington"
+      - "Atlanta"
+      - "Mexico City"
+      - "Bogota"
+  -
+    name: "Mexico City"
+    disease: "Yellow"
+    edges:
+      - "Los Angeles"
+      - "Chicago"
+      - "Miami"
+      - "Bogota"
+      #- "Lima"
+  -
+    name: "Bogota"
+    disease: "Yellow"
+    edges:
+      - "Miami"
+      - "Mexico City"

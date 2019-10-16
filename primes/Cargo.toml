@@ -1,0 +1,10 @@
+[package]
+name = "primes-cli"
+description = "Prime number generator CLI"
+repository = "https://github.com/JackWReid/primes"
+version = "0.1.0"
+authors = ["Jack Reid <emailjackreid@gmail.com>"]
+license = "MIT"
+
+[dependencies]
+clap = "2.30.0"

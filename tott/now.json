@@ -1,0 +1,7 @@
+{
+  "name": "tott",
+  "alias": "tott.now.sh",
+  "env": {
+    "NODE_ENV": "production"
+  }
+}

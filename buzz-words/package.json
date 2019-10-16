@@ -1,0 +1,16 @@
+{
+  "name": "buzz-words",
+  "version": "1.0.1",
+  "description": "Get a random buzzy word.",
+  "main": "index.js",
+  "author": {
+    "name": "Jack Reid",
+    "email": "emailjackreid@gmail.com",
+    "url": "jackreid.xyz"
+  },
+  "repository": "jackwreid/buzz-words",
+  "license": "MIT",
+  "dependencies": {
+    "unique-random-array": "^1.0.0"
+  }
+}

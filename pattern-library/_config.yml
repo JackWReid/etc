@@ -1,0 +1,9 @@
+# Site settings
+title: Pattern Library
+baseurl: "" # the subpath of your site, e.g. /blog/
+# url: "http://stylegui.de"
+url: "/Users/jack/dev/pattern-library/_site"
+
+# Build settings
+markdown: kramdown
+exclude: [node_modules, gulpfile.js, package.json]

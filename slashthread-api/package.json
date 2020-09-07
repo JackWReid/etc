@@ -18,7 +18,7 @@
     "cors": "^2.8.1",
     "express": "^4.14.1",
     "lodash": "^4.17.19",
-    "morgan": "^1.7.0",
+    "morgan": "^1.9.1",
     "node-fetch": "^1.6.3",
     "now-logs": "^0.0.7",
     "response-time": "^2.3.2"

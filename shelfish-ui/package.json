@@ -1,0 +1,32 @@
+{
+  "name": "shelfish-ui",
+  "module": "src/index.tsx",
+  "type": "module",
+  "scripts": {
+    "dev": "bun run --watch .",
+    "backup": "cp shelfish.sqlite backups/$(date +\"%Y-%m-%d_%H-%M-%S\").sqlite",
+    "css": "tailwindcss -i ./src/style.css -o ./public/style.css --watch"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "tailwindcss": "^3.4.6"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@bogeychan/elysia-logger": "^0.1.1",
+    "@elysiajs/html": "^1.1.0",
+    "@elysiajs/static": "^1.1.0",
+    "@stricjs/router": "^5.0.6",
+    "cheerio": "^1.0.0-rc.12",
+    "date-fns": "^3.6.0",
+    "elysia": "^1.1.3",
+    "flowbite": "^2.4.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "rss-parser": "^3.13.0"
+  }
+}

@@ -1,0 +1,16 @@
+package templates
+
+templ AddPage(title string) {
+	@layout(title) {
+		<h1>Add Book</h1>
+		<form action={ templ.URL("/search") } method="post">
+			<sl-input size="small" label="Title" name="title"></sl-input>
+			<sl-input size="small" label="Author" name="author"></sl-input>
+			<sl-input size="small" label="ISBN" name="isbn"></sl-input>
+			<sl-button type="submit" variant="primary">
+				<sl-icon slot="prefix" name="search"></sl-icon>
+				Search
+			</sl-button>
+		</form>
+	}
+}

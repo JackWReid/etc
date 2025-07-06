@@ -1,0 +1,19 @@
+package templates
+
+import "shelfish/services"
+
+templ SearchResultsPage(title string, book services.GoodreadsScrapeBook) {
+	@layout("Home") {
+		<h1 class="page-title">{ title }</h1>
+		<ul class="goodreads-search-results">
+			<li class="goodreads-search-results-item">
+				<img class="goodreads-search-results-item__image" src={ book.ImageURL }/>
+				<div>
+					<h1 class="goodreads-search-results-item__title">{ book.Title }</h1>
+					<p class="goodreads-search-results-item__author">{ book.Author }</p>
+					<sl-button href="/add">Add to Shelfish</sl-button>
+				</div>
+			</li>
+		</ul>
+	}
+}

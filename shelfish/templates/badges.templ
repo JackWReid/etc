@@ -1,0 +1,53 @@
+package templates
+
+templ OkuBadge(okuURL string) {
+	<sl-badge variant="neutral">
+		<a class="nonlink" href={ templ.URL(okuURL) }>
+			Oku
+		</a>
+	</sl-badge>
+}
+
+templ GoodreadsBadge(goodreadsURL string) {
+	<sl-badge variant="neutral">
+		<a class="nonlink" href={ templ.URL(goodreadsURL) }>
+			Goodreads
+		</a>
+	</sl-badge>
+}
+
+templ AmazonBadge(amazonURL string) {
+	<sl-badge variant="neutral">
+		<a class="nonlink" href={ templ.URL(amazonURL) }>
+			Amazon
+		</a>
+	</sl-badge>
+}
+
+templ ReadBadge(readStatus string) {
+	if readStatus == "read" {
+		<sl-badge variant="success">
+			Read
+		</sl-badge>
+	} else if readStatus == "reading" {
+		<sl-badge variant="primary">
+			To Read
+		</sl-badge>
+	} else {
+		<sl-badge variant="warning">
+			Unread
+		</sl-badge>
+	}
+}
+
+templ OwnedBadge(ownedStatus string) {
+	if ownedStatus == "owned" {
+		<sl-badge variant="success">
+			Owned
+		</sl-badge>
+	} else {
+		<sl-badge variant="warning">
+			Not Owned
+		</sl-badge>
+	}
+}

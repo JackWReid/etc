@@ -1,0 +1,18 @@
+package templates
+
+import (
+  "fmt"
+
+  "shelfish/model"
+)
+
+// rows.Scan(&job.ID, &job.Type, &job.Status, &job.Payload, &job.DateCreated)
+templ Jobs(title string, jobs []model.Job) {
+	@layout("Jobs") {
+		<ul>
+			for _, job := range jobs {
+				<li>{fmt.Sprint(job.ID)} {job.Type} {job.Status} {job.Payload} {job.DateCreated}</li>
+			}
+		</ul>
+	}
+}

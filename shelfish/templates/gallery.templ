@@ -1,0 +1,21 @@
+package templates
+
+import "shelfish/model"
+
+templ Gallery(title string, books []model.DisplayBook) {
+	@layout("Home") {
+		<ul class="book-gallery">
+			for _, book := range books {
+				<li class="book-gallery-item">
+					<img class="book-gallery-item__image" src={ book.ImageURL }/>
+					<div>
+						<a class="book-gallery-item__link" href={ templ.URL("/book/" + book.ID) }>
+							<h1 class="book-gallery-item__title">{ book.Title }</h1>
+							<p class="book-gallery-item__author">{ book.Author }</p>
+						</a>
+					</div>
+				</li>
+			}
+		</ul>
+	}
+}

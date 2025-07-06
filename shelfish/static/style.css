@@ -1,0 +1,142 @@
+:root {
+  --size-book-cover-sm: 6rem;
+  --size-book-cover-md: 10rem;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: rgb(39, 39, 42); /*--sl-color-neutral-900*/
+  font-family: var(--sl-font-sans);
+}
+
+.nonlink {
+  text-decoration: none;
+  color: inherit;
+}
+
+.site-header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  padding: var(--sl-spacing-small);
+  box-shadow: var(--sl-shadow-large);
+  background-color: var(--sl-color-neutral-0);
+}
+
+.site-header nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-header nav > * {
+  margin-right: var(--sl-spacing-small);
+}
+
+.site-header h1 {
+  font-size: var(--sl-font-size-medium);
+}
+
+.site-header a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.page-wrapper {
+  margin: var(--sl-spacing-4x-large) auto 0 auto;
+  padding-top: var(--sl-spacing-2x-large);
+  max-width: 64rem;
+}
+
+.book-detail {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  grid-gap: var(--sl-spacing-medium);
+}
+
+.book-detail--edit button {
+  margin-top: var(--sl-spacing-medium);
+}
+
+.book-detail img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.book-id-grid {
+  margin-top: var(--sl-spacing-medium);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: var(--sl-spacing-medium);
+}
+
+.book-update-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.book-update-list-item {
+  display: grid;
+  grid-template-columns: var(--size-book-cover-sm) 1fr;
+  grid-gap: var(--sl-spacing-small);
+}
+
+.book-update-list-item:not(:last-child) {
+  margin-bottom: var(--sl-spacing-medium);
+}
+
+.book-update-list-item__image {
+  display: block;
+  width: 100%;
+}
+
+.book-update-list-item__link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.book-update-list-item__name {
+  font-size: var(--sl-font-size-large);
+  font-weight: var(--sl-font-weight-medium);
+}
+
+.book-update-list-item__title {
+  font-weight: var(--sl-font-weight-bold);
+}
+
+.book-update-list-item__date {
+  display: block;
+  font-size: var(--sl-font-size-small);
+}
+
+.book-gallery {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 72rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: var(--sl-spacing-medium);
+  list-style: none;
+}
+
+.book-gallery-item__image {
+  display: block;
+  width: 100%;
+}
+
+.book-gallery-item__link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.book-gallery-item__title,
+.book-gallery-item__author {
+  font-size: var(--sl-font-size-small);
+  text-align: center;
+}
+
+.book-gallery-item__author {
+  margin: 0;
+}

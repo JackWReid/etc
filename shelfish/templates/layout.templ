@@ -1,0 +1,41 @@
+package templates
+
+templ siteheader() {
+	<header class="site-header">
+    <nav>
+      <h1>
+        <a href="/">
+          Shelfish
+        </a>
+      </h1>
+      <a href="/add">
+        Add
+      </a>
+      <a href="/jobs">
+        Jobs
+      </a>
+    </nav>
+	</header>
+}
+
+templ layout(title string) {
+	<html lang="en">
+		<head>
+			<meta charset="UTF-8"/>
+			<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+			<title>{ title } | Shelfish</title>
+			<link
+				rel="stylesheet"
+				href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.17.1/cdn/themes/light.css"
+			/>
+			<script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.17.1/cdn/shoelace-autoloader.js"></script>
+			<link rel="stylesheet" href="/static/style.css"/>
+		</head>
+		<body>
+			@siteheader()
+      <div class="page-wrapper">
+			{ children... }
+      </div>
+		</body>
+	</html>
+}

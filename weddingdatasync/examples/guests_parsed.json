@@ -1,0 +1,1107 @@
+[
+  {
+    "id": "968603ab-0cb1-4e09-9fb5-40fed9633d27",
+    "lastEdited": "2023-09-29T14:38:00.000Z",
+    "name": "Paul Musso",
+    "home": "DE",
+    "side": "Sarah",
+    "email": null,
+    "diet": [],
+    "group": "École/LPC"
+  },
+  {
+    "id": "122ba0d9-f0da-4924-9541-0d396baed121",
+    "lastEdited": "2023-09-18T17:16:00.000Z",
+    "name": "Michel Raskine",
+    "home": "FR",
+    "side": "Sarah",
+    "email": null,
+    "diet": []
+  },
+  {
+    "id": "e02ee78d-7ab1-4fb3-903d-a8b5826caa26",
+    "lastEdited": "2023-09-18T16:17:00.000Z",
+    "name": "Fiammetta Raskine",
+    "home": "FR",
+    "side": "Sarah",
+    "email": null,
+    "diet": []
+  },
+  {
+    "id": "c591db9b-87f3-4969-aed2-9b1cd4da3437",
+    "lastEdited": "2023-09-18T16:17:00.000Z",
+    "name": "Alessio Raskine",
+    "home": "FR",
+    "side": "Sarah",
+    "email": null,
+    "diet": []
+  },
+  {
+    "id": "864bcad4-38ca-49bf-b22d-d1830acb87d9",
+    "lastEdited": "2023-09-18T16:17:00.000Z",
+    "name": "Laura Raskine",
+    "home": "FR",
+    "side": "Sarah",
+    "email": null,
+    "diet": []
+  },
+  {
+    "id": "2578e535-c8d7-4a27-9919-a5208fa04851",
+    "lastEdited": "2023-09-18T16:17:00.000Z",
+    "name": "Laurent Raskine",
+    "home": "FR",
+    "side": "Sarah",
+    "email": null,
+    "diet": []
+  },
+  {
+    "id": "e56e4edd-027a-46a7-87dd-916aa46f3326",
+    "lastEdited": "2023-10-28T15:02:00.000Z",
+    "name": "Verena Renggli",
+    "home": "CH",
+    "side": "Sarah",
+    "email": null,
+    "diet": [],
+    "group": "École/LPC"
+  },
+  {
+    "id": "cf78354c-87c4-4e0e-9009-179b2b7606db",
+    "lastEdited": "2023-09-17T13:26:00.000Z",
+    "name": "Tante Gerli",
+    "home": "CH",
+    "side": "Sarah",
+    "email": null,
+    "diet": []
+  },
+  {
+    "id": "eac27d6c-b4be-4024-b664-12feaf110a0c",
+    "lastEdited": "2023-09-12T08:20:00.000Z",
+    "name": "Jo Platt",
+    "home": "UK",
+    "side": "Jack",
+    "email": null,
+    "diet": [],
+    "confirmed": "Yes",
+    "group": "Jack Nuclear"
+  },
+  {
+    "id": "97cb655e-c68a-4d5b-a475-6af9430494f2",
+    "lastEdited": "2023-09-12T08:00:00.000Z",
+    "name": "Sarah Hackinger",
+    "home": "DE",
+    "side": "Sarah",
+    "email": null,
+    "diet": [
+      "Vegetarian"
+    ],
+    "confirmed": "Yes"
+  },
+  {
+    "id": "e66bafb9-4ef7-415d-9ac3-6a25652eeb14",
+    "lastEdited": "2023-09-12T08:00:00.000Z",
+    "name": "Jack Reid",
+    "home": "DE",
+    "side": "Jack",
+    "email": null,
+    "diet": [
+      "Vegetarian"
+    ],
+    "confirmed": "Yes"
+  },
+  {
+    "id": "6072ecbc-34ad-41f0-9d56-3cf6d38da3a1",
+    "lastEdited": "2023-09-12T08:24:00.000Z",
+    "name": "Quentin (Chloe Benenson +1)",
+    "home": "FR",
+    "side": "Sarah",
+    "email": null,
+    "diet": [],
+    "confirmed": "Yes",
+    "group": "Benensons"
+  },
+  {
+    "id": "70827456-9a49-4bce-b05e-ccd8a0b252f8",
+    "lastEdited": "2023-09-12T08:21:00.000Z",
+    "name": "Jack Coleman",
+    "home": "UK",
+    "side": "Jack",
+    "email": null,
+    "diet": [
+      "Vegetarian"
+    ],
+    "confirmed": "Yes",
+    "group": "Jack Nuclear"
+  },
+  {
+    "id": "8e47c45e-cdca-4a99-899f-68548f0e2c7c",
+    "lastEdited": "2023-09-06T17:48:00.000Z",
+    "name": "Andre",
+    "home": "FR",
+    "side": "Sarah",
+    "email": null,
+    "diet": []
+  },
+  {
+    "id": "1bd78da0-3ff7-4f38-a43c-2976d9f2af5d",
+    "lastEdited": "2023-09-12T08:27:00.000Z",
+    "name": "Ivy Davies Wood",
+    "home": "UK",
+    "side": "Sarah",
+    "email": null,
+    "diet": [],
+    "group": "École/LPC"
+  },
+  {
+    "id": "02ed00f3-acea-43f4-af5f-6dfaadb6989b",
+    "lastEdited": "2023-09-29T14:35:00.000Z",
+    "name": "Nicola Le Hir",
+    "home": "FR",
+    "side": "Sarah",
+    "email": null,
+    "diet": [],
+    "confirmed": "Yes",
+    "group": "Le Hir"
+  },
+  {
+    "id": "b74b3a36-1e2b-48a8-b310-0ca9624ee56a",
+    "lastEdited": "2023-09-29T14:35:00.000Z",
+    "name": "Ivan Le Hir",
+    "home": "FR",
+    "side": "Sarah",
+    "email": null,
+    "diet": [],
+    "confirmed": "Yes",
+    "group": "Le Hir"
+  },
+  {
+    "id": "e7c81a17-8a23-4806-a885-4517cc087460",
+    "lastEdited": "2023-09-29T14:35:00.000Z",
+    "name": "Emmanuel Le Hir",
+    "home": "FR",
+    "side": "Sarah",
+    "email": null,
+    "diet": [],
+    "confirmed": "Yes",
+    "group": "Le Hir"
+  },
+  {
+    "id": "4a961e1d-6bd7-4b48-aebf-24d1c0287850",
+    "lastEdited": "2023-09-12T08:26:00.000Z",
+    "name": "Noémie Benenson",
+    "home": "CH",
+    "side": "Sarah",
+    "email": null,
+    "diet": [],
+    "confirmed": "Yes",
+    "group": "Benensons"
+  },
+  {
+    "id": "26abac9b-808e-439a-91fd-ca9f9a4985ca",
+    "lastEdited": "2023-09-06T17:50:00.000Z",
+    "name": "Gerard Cros",
+    "home": "FR",
+    "side": "Sarah",
+    "email": null,
+    "diet": []
+  },
+  {
+    "id": "4514894c-8815-4fe9-8e2c-2b6b9bce943e",
+    "lastEdited": "2023-09-06T17:50:00.000Z",
+    "name": "Antoinette Cros",
+    "home": "FR",
+    "side": "Sarah",
+    "email": null,
+    "diet": []
+  },
+  {
+    "id": "8052c87f-2c18-4da2-ba46-23aff6a2950b",
+    "lastEdited": "2023-09-06T17:48:00.000Z",
+    "name": "Justine Cros",
+    "home": "FR",
+    "side": "Sarah",
+    "email": null,
+    "diet": []
+  },
+  {
+    "id": "3777def2-9d22-4269-86ba-585c15adff70",
+    "lastEdited": "2023-09-06T17:48:00.000Z",
+    "name": "Yannik ",
+    "home": "FR",
+    "side": "Sarah",
+    "email": null,
+    "diet": []
+  },
+  {
+    "id": "9dfa462f-05f6-4890-9285-06aef40749d0",
+    "lastEdited": "2023-09-06T17:48:00.000Z",
+    "name": "Francois",
+    "home": "FR",
+    "side": "Sarah",
+    "email": null,
+    "diet": []
+  },
+  {
+    "id": "49acf4cb-f5a4-4110-a2f9-4e5f669ab1aa",
+    "lastEdited": "2023-09-12T08:26:00.000Z",
+    "name": "Aria Benenson",
+    "home": "CH",
+    "side": "Sarah",
+    "email": null,
+    "diet": [],
+    "confirmed": "Yes",
+    "group": "Benensons"
+  },
+  {
+    "id": "05a3129c-156b-4f39-b805-78b3427fde99",
+    "lastEdited": "2023-09-12T08:26:00.000Z",
+    "name": "Sabine Surlalune",
+    "home": "CH",
+    "side": "Sarah",
+    "email": null,
+    "diet": [],
+    "confirmed": "Yes",
+    "group": "Benensons"
+  },
+  {
+    "id": "200710c3-7fca-4c2e-b16b-b90c8eba09b4",
+    "lastEdited": "2023-09-12T08:26:00.000Z",
+    "name": "Rodrigo Benenson",
+    "home": "CH",
+    "side": "Sarah",
+    "email": null,
+    "diet": [],
+    "confirmed": "Yes",
+    "group": "Benensons"
+  },
+  {
+    "id": "fb03470d-d030-4c20-95aa-bc024aa4650c",
+    "lastEdited": "2023-09-12T08:23:00.000Z",
+    "name": "Anna (Ian + 1)",
+    "home": "UK",
+    "side": "Jack",
+    "email": null,
+    "diet": [
+      "No Dairy",
+      "Omni"
+    ],
+    "confirmed": "Yes",
+    "group": "Freaks"
+  },
+  {
+    "id": "6322e0fd-c91f-44b1-83b6-d379dfa2e8f5",
+    "lastEdited": "2023-09-12T08:23:00.000Z",
+    "name": "Ian Feather",
+    "home": "UK",
+    "side": "Jack",
+    "email": null,
+    "diet": [
+      "Omni"
+    ],
+    "confirmed": "Yes",
+    "group": "Freaks"
+  },
+  {
+    "id": "91261263-de38-4ae7-a7ea-9e1761fc123e",
+    "lastEdited": "2023-09-12T08:24:00.000Z",
+    "name": "Finn Benenson",
+    "home": "USA",
+    "side": "Sarah",
+    "email": null,
+    "diet": [],
+    "group": "Benensons"
+  },
+  {
+    "id": "6988dc6a-fadb-44b9-9cf4-25ea77118d42",
+    "lastEdited": "2023-09-12T08:24:00.000Z",
+    "name": "Oliver Benenson",
+    "home": "USA",
+    "side": "Sarah",
+    "email": null,
+    "diet": [],
+    "group": "Benensons"
+  },
+  {
+    "id": "fbb354da-6085-456b-a97b-869db42d3849",
+    "lastEdited": "2023-09-12T08:24:00.000Z",
+    "name": "Abram Benenson",
+    "home": "USA",
+    "side": "Sarah",
+    "email": null,
+    "diet": [],
+    "group": "Benensons"
+  },
+  {
+    "id": "f6eeaa2f-9d2c-491c-bb19-f2d5d7e3c6e7",
+    "lastEdited": "2023-09-29T14:37:00.000Z",
+    "name": "Luca Raskine",
+    "home": "FR",
+    "side": "Sarah",
+    "email": null,
+    "diet": [],
+    "confirmed": "Yes",
+    "group": "Raskines"
+  },
+  {
+    "id": "46e9e2b8-9fff-40dc-af5f-67cfc51448a1",
+    "lastEdited": "2023-09-29T14:37:00.000Z",
+    "name": "Noah Raskine",
+    "home": "FR",
+    "side": "Sarah",
+    "email": null,
+    "diet": [],
+    "confirmed": "Yes",
+    "group": "Raskines"
+  },
+  {
+    "id": "71e05f05-4b54-47bf-bf3c-733175d1d2ba",
+    "lastEdited": "2023-09-12T08:24:00.000Z",
+    "name": "Eli Seiler",
+    "home": "USA",
+    "side": "Sarah",
+    "email": null,
+    "diet": [],
+    "group": "Benensons"
+  },
+  {
+    "id": "08905f22-cd13-44fc-b9e4-8df49d68f098",
+    "lastEdited": "2023-09-12T08:27:00.000Z",
+    "name": "Sam Cottril",
+    "home": "UK",
+    "side": "Jack",
+    "email": null,
+    "diet": [
+      "Omni"
+    ],
+    "group": "Reids"
+  },
+  {
+    "id": "ca641d3e-7705-4ec3-a085-3745267bce5c",
+    "lastEdited": "2023-09-12T08:27:00.000Z",
+    "name": "Kenneth C. Hill",
+    "home": "CH",
+    "side": "Sarah",
+    "email": null,
+    "diet": [
+      "Vegetarian"
+    ],
+    "confirmed": "Yes",
+    "group": "École/LPC"
+  },
+  {
+    "id": "bbd5d31d-16a1-43d9-968b-87383e398afc",
+    "lastEdited": "2023-09-12T08:27:00.000Z",
+    "name": "Kathleen Hennessey ",
+    "home": "CH",
+    "side": "Sarah",
+    "email": null,
+    "diet": [
+      "Vegetarian"
+    ],
+    "confirmed": "Yes",
+    "group": "École/LPC"
+  },
+  {
+    "id": "4f4435e8-5f34-4262-a13d-f02d6d064eee",
+    "lastEdited": "2023-12-10T15:57:00.000Z",
+    "name": "Max Hackinger",
+    "home": "USA",
+    "side": "Sarah",
+    "email": null,
+    "diet": [],
+    "confirmed": "Yes",
+    "group": "Sarah Nuclear"
+  },
+  {
+    "id": "4dcc8c67-a61f-443c-b0f0-cd2c8a566b9d",
+    "lastEdited": "2023-09-12T08:20:00.000Z",
+    "name": "Mitzi Reid",
+    "home": "UK",
+    "side": "Jack",
+    "email": null,
+    "diet": [
+      "Omni"
+    ],
+    "confirmed": "Yes",
+    "group": "Jack Nuclear"
+  },
+  {
+    "id": "12d20565-88c7-47df-8e94-83529e6a15fa",
+    "lastEdited": "2023-09-12T08:26:00.000Z",
+    "name": "Christian Hackinger",
+    "home": "DE",
+    "side": "Sarah",
+    "email": null,
+    "diet": [
+      "Omni"
+    ],
+    "confirmed": "Yes",
+    "group": "Sarah Nuclear"
+  },
+  {
+    "id": "6c4606d9-11bb-42f0-a007-e2c50a6327f5",
+    "lastEdited": "2023-09-12T08:27:00.000Z",
+    "name": "Daniel Davies Wood",
+    "home": "UK",
+    "side": "Sarah",
+    "email": null,
+    "diet": [],
+    "group": "École/LPC"
+  },
+  {
+    "id": "1e25d714-d44f-4f32-8f98-030ea05f4ec8",
+    "lastEdited": "2023-09-12T08:27:00.000Z",
+    "name": "Marnie Davies Wood",
+    "home": "UK",
+    "side": "Sarah",
+    "email": null,
+    "diet": [],
+    "group": "École/LPC"
+  },
+  {
+    "id": "ab9dc7ab-0ee7-4f57-8580-f8edc1730fad",
+    "lastEdited": "2023-09-12T08:27:00.000Z",
+    "name": "David Jaggi",
+    "home": "CH",
+    "side": "Sarah",
+    "email": null,
+    "diet": [],
+    "group": "École/LPC"
+  },
+  {
+    "id": "9de71adb-a0cc-48fe-b725-14dee55f75e4",
+    "lastEdited": "2023-09-12T08:27:00.000Z",
+    "name": "Lena Hildebrand",
+    "home": "CH",
+    "side": "Sarah",
+    "email": null,
+    "diet": [],
+    "group": "École/LPC"
+  },
+  {
+    "id": "e1e8c5c2-625a-4103-acc1-cfd68799aa84",
+    "lastEdited": "2023-09-16T07:28:00.000Z",
+    "name": "Marcel Lindegger",
+    "home": "CH",
+    "side": "Sarah",
+    "email": null,
+    "diet": [],
+    "confirmed": "Yes",
+    "group": "École/LPC"
+  },
+  {
+    "id": "536bbfe7-f3ea-4d5d-ad39-ae03c0dd3c86",
+    "lastEdited": "2023-09-16T07:28:00.000Z",
+    "name": "Lea Lindegger",
+    "home": "CH",
+    "side": "Sarah",
+    "email": null,
+    "diet": [],
+    "confirmed": "Yes",
+    "group": "École/LPC"
+  },
+  {
+    "id": "c9213cef-ed20-4e4c-8b50-35a51569c330",
+    "lastEdited": "2023-12-10T15:57:00.000Z",
+    "name": "Collin Bradley",
+    "home": "USA",
+    "side": "Sarah",
+    "email": null,
+    "diet": [],
+    "confirmed": "Yes",
+    "group": "Sarah Nuclear"
+  },
+  {
+    "id": "643f0367-2248-491f-8da8-8023172cfff6",
+    "lastEdited": "2023-09-07T04:43:00.000Z",
+    "name": "Vivien Berah",
+    "home": "FR",
+    "side": "Sarah",
+    "email": null,
+    "diet": [],
+    "confirmed": "Yes"
+  },
+  {
+    "id": "57e452ae-b1a8-4eea-be2e-4531467d0a25",
+    "lastEdited": "2023-09-12T08:23:00.000Z",
+    "name": "Michael Hackinger",
+    "home": "FR",
+    "side": "Sarah",
+    "email": null,
+    "diet": [],
+    "confirmed": "Yes",
+    "group": "Sarah Nuclear"
+  },
+  {
+    "id": "8354c4c8-0755-4b1a-add2-bafb9cecaa13",
+    "lastEdited": "2023-09-12T08:27:00.000Z",
+    "name": "Joshua Jara",
+    "home": "ESP",
+    "side": "Sarah",
+    "email": null,
+    "diet": [],
+    "group": "École/LPC"
+  },
+  {
+    "id": "92d3bbe8-aec0-4538-a41e-d7f5b7623819",
+    "lastEdited": "2023-09-12T08:23:00.000Z",
+    "name": "Sonia Benenson",
+    "home": "FR",
+    "side": "Sarah",
+    "email": null,
+    "diet": [],
+    "confirmed": "Yes",
+    "group": "Sarah Nuclear"
+  },
+  {
+    "id": "1ba7c35e-e2be-45c1-bcad-b920c03b9353",
+    "lastEdited": "2023-09-12T08:27:00.000Z",
+    "name": "Olivia Micillo",
+    "home": "ESP",
+    "side": "Sarah",
+    "email": null,
+    "diet": [
+      "Vegetarian"
+    ],
+    "group": "École/LPC"
+  },
+  {
+    "id": "32b2f7a6-e15a-42e4-b683-aed2d052bb2f",
+    "lastEdited": "2023-09-12T08:23:00.000Z",
+    "name": "Amelia Mansfield",
+    "home": "UK",
+    "side": "Jack",
+    "email": null,
+    "diet": [
+      "Pescatarian"
+    ],
+    "confirmed": "Yes",
+    "group": "Freaks"
+  },
+  {
+    "id": "ee54d4b9-4275-4316-a85f-cac163464aa7",
+    "lastEdited": "2023-09-12T08:26:00.000Z",
+    "name": "Amelia (Amy +1)",
+    "home": "UK",
+    "side": "Sarah",
+    "email": null,
+    "diet": [],
+    "group": "Sarah London"
+  },
+  {
+    "id": "7e394be8-fc36-4e67-aa54-45d621bc0e8a",
+    "lastEdited": "2023-09-12T08:23:00.000Z",
+    "name": "Mark Gono",
+    "home": "UK",
+    "side": "Jack",
+    "email": null,
+    "diet": [],
+    "confirmed": "Yes",
+    "group": "Freaks"
+  },
+  {
+    "id": "ebe72dbb-66f9-476e-aec9-79610b7aaac8",
+    "lastEdited": "2023-09-12T08:23:00.000Z",
+    "name": "Kelly Miller",
+    "home": "USA",
+    "side": "Jack",
+    "email": null,
+    "diet": [
+      "Omni"
+    ],
+    "confirmed": "Yes",
+    "group": "Freaks"
+  },
+  {
+    "id": "ab1736b4-11da-49a5-a4a1-d8d152907072",
+    "lastEdited": "2023-09-12T08:23:00.000Z",
+    "name": "Devin Argenta",
+    "home": "USA",
+    "side": "Jack",
+    "email": null,
+    "diet": [
+      "Omni"
+    ],
+    "confirmed": "Yes",
+    "group": "Freaks"
+  },
+  {
+    "id": "3a7f59b3-2dff-4cbc-acf5-8af5316441cb",
+    "lastEdited": "2023-09-12T08:26:00.000Z",
+    "name": "Amy Bowers Brown",
+    "home": "UK",
+    "side": "Sarah",
+    "email": null,
+    "diet": [
+      "Vegan"
+    ],
+    "group": "Sarah London"
+  },
+  {
+    "id": "b977afa9-4b3c-4dad-bcaa-26dc6676da9d",
+    "lastEdited": "2023-09-12T08:25:00.000Z",
+    "name": "Lewis Ner",
+    "home": "UK",
+    "side": "Sarah",
+    "email": null,
+    "diet": [
+      "Omni"
+    ],
+    "group": "Sarah Uni"
+  },
+  {
+    "id": "6e2d328d-f4a3-463a-9157-6cbe9efb8991",
+    "lastEdited": "2023-09-12T08:25:00.000Z",
+    "name": "Louise Ner",
+    "home": "UK",
+    "side": "Sarah",
+    "email": null,
+    "diet": [
+      "Omni",
+      "No Dairy"
+    ],
+    "group": "Sarah Uni"
+  },
+  {
+    "id": "a789beaf-596b-432c-a23d-ececa966673a",
+    "lastEdited": "2023-09-12T08:25:00.000Z",
+    "name": "David Hesketh-Young",
+    "home": "UK",
+    "side": "Sarah",
+    "email": null,
+    "diet": [],
+    "confirmed": "Yes",
+    "group": "Sarah Uni"
+  },
+  {
+    "id": "244ab984-b7f3-46d0-b8eb-7ae8bab81222",
+    "lastEdited": "2023-09-12T08:25:00.000Z",
+    "name": "Chloe Robertson",
+    "home": "UK",
+    "side": "Sarah",
+    "email": null,
+    "diet": [],
+    "confirmed": "Yes",
+    "group": "Sarah Uni"
+  },
+  {
+    "id": "a829e3c9-6c0a-4d8b-ba22-e56e5ee5c280",
+    "lastEdited": "2023-11-19T11:00:00.000Z",
+    "name": "Anna Warren",
+    "home": "UK",
+    "side": "Sarah",
+    "email": null,
+    "diet": [
+      "Omni"
+    ],
+    "confirmed": "Yes",
+    "group": "Sarah London"
+  },
+  {
+    "id": "d05f85e5-e867-46c0-92a1-a5ffb4475ebd",
+    "lastEdited": "2023-09-12T08:27:00.000Z",
+    "name": "Amber Needham",
+    "home": "UK",
+    "side": "Sarah",
+    "email": null,
+    "diet": [],
+    "group": "École/LPC"
+  },
+  {
+    "id": "3ff8887c-b0aa-4670-a53d-9b8ea1a0110d",
+    "lastEdited": "2023-11-06T13:24:00.000Z",
+    "name": "Mel Tosik",
+    "home": "USA",
+    "side": "Jack",
+    "email": null,
+    "diet": [],
+    "confirmed": "Yes",
+    "group": "Freaks"
+  },
+  {
+    "id": "d1c43729-c90a-4152-ba7a-c884bffc0c69",
+    "lastEdited": "2023-09-29T14:37:00.000Z",
+    "name": "Mariana Raskine",
+    "home": "FR",
+    "side": "Sarah",
+    "email": null,
+    "diet": [],
+    "confirmed": "Yes",
+    "group": "Raskines"
+  },
+  {
+    "id": "d82f6a4a-60f1-45ae-8f41-644f12f54403",
+    "lastEdited": "2023-09-29T14:37:00.000Z",
+    "name": "Sacha Raskine",
+    "home": "FR",
+    "side": "Sarah",
+    "email": null,
+    "diet": [],
+    "confirmed": "Yes",
+    "group": "Raskines"
+  },
+  {
+    "id": "ffb63338-5ea8-4e62-90d4-79bc468d820c",
+    "lastEdited": "2023-12-10T15:57:00.000Z",
+    "name": "Amanda",
+    "home": "USA",
+    "side": "Jack",
+    "email": null,
+    "diet": [],
+    "confirmed": "Yes",
+    "group": "Freaks"
+  },
+  {
+    "id": "5e3d1fb5-ff8c-49fb-9cb5-df310d796c2e",
+    "lastEdited": "2023-12-10T15:57:00.000Z",
+    "name": "Gabe Campo",
+    "home": "USA",
+    "side": "Jack",
+    "email": null,
+    "diet": [],
+    "confirmed": "Yes",
+    "group": "Freaks"
+  },
+  {
+    "id": "5e2d0e93-8516-4cb5-b2d0-9072c990bfdf",
+    "lastEdited": "2023-09-29T14:34:00.000Z",
+    "name": "Max Totsky",
+    "home": "USA",
+    "side": "Jack",
+    "email": null,
+    "diet": [],
+    "confirmed": "No",
+    "group": "Freaks"
+  },
+  {
+    "id": "cc6a8849-96d8-41f1-bd4c-2804c73489d6",
+    "lastEdited": "2023-09-29T14:33:00.000Z",
+    "name": "Maria Fang",
+    "home": "USA",
+    "side": "Jack",
+    "email": null,
+    "diet": [],
+    "confirmed": "Yes",
+    "group": "Freaks"
+  },
+  {
+    "id": "5a156644-c7d5-41d0-9583-76ca54daa97e",
+    "lastEdited": "2023-09-25T08:02:00.000Z",
+    "name": "Milan Samuel",
+    "home": "USA",
+    "side": "Jack",
+    "email": null,
+    "diet": [],
+    "confirmed": "Yes",
+    "group": "Freaks"
+  },
+  {
+    "id": "4a5f3d82-4b93-4641-92f1-813d6da65007",
+    "lastEdited": "2023-09-12T08:23:00.000Z",
+    "name": "Jack Weiss",
+    "home": "USA",
+    "side": "Jack",
+    "email": null,
+    "diet": [],
+    "group": "Freaks"
+  },
+  {
+    "id": "19fe8aec-4437-4ea8-a9f7-e18096ce46c7",
+    "lastEdited": "2023-09-29T14:33:00.000Z",
+    "name": "Brian Clifton",
+    "home": "USA",
+    "side": "Jack",
+    "email": null,
+    "diet": [],
+    "confirmed": "Yes",
+    "group": "Freaks"
+  },
+  {
+    "id": "4e5d80d8-3f6a-40b4-8c57-580157a01a74",
+    "lastEdited": "2023-09-12T08:23:00.000Z",
+    "name": "Yuchen Zhang",
+    "home": "USA",
+    "side": "Jack",
+    "email": null,
+    "diet": [],
+    "group": "Freaks"
+  },
+  {
+    "id": "0d41e6e8-e570-48d2-b443-bc8bdb7f899a",
+    "lastEdited": "2023-09-12T08:25:00.000Z",
+    "name": "Martin Fatal",
+    "home": "FR",
+    "side": "Sarah",
+    "email": null,
+    "diet": [],
+    "confirmed": "Yes",
+    "group": "Raskines"
+  },
+  {
+    "id": "e3d57cad-8c08-4dfb-95f9-6bc212372004",
+    "lastEdited": "2023-09-12T08:23:00.000Z",
+    "name": "Sam Thurman",
+    "home": "USA",
+    "side": "Jack",
+    "email": null,
+    "diet": [],
+    "group": "Freaks"
+  },
+  {
+    "id": "e0534d7f-06b7-408d-8cd5-5bf0e9f42d18",
+    "lastEdited": "2023-09-12T08:25:00.000Z",
+    "name": "Margot Raskine",
+    "home": "FR",
+    "side": "Sarah",
+    "email": null,
+    "diet": [],
+    "confirmed": "Yes",
+    "group": "Raskines"
+  },
+  {
+    "id": "631e8ee8-e828-45e1-ac35-71974d656c61",
+    "lastEdited": "2023-09-12T08:23:00.000Z",
+    "name": "Matt Dannenberg",
+    "home": "USA",
+    "side": "Jack",
+    "email": null,
+    "diet": [
+      "Omni"
+    ],
+    "confirmed": "Yes",
+    "group": "Freaks"
+  },
+  {
+    "id": "3811c404-03b3-4e04-ab2a-9806fcd2df19",
+    "lastEdited": "2023-09-12T08:25:00.000Z",
+    "name": "Karim (Louise +1)",
+    "home": "FR",
+    "side": "Sarah",
+    "email": null,
+    "diet": [],
+    "group": "Raskines"
+  },
+  {
+    "id": "c549ee7b-fb6d-45e6-9928-9ea499a83b00",
+    "lastEdited": "2023-09-12T08:23:00.000Z",
+    "name": "Hana Carpenter",
+    "home": "USA",
+    "side": "Jack",
+    "email": null,
+    "diet": [
+      "Omni"
+    ],
+    "confirmed": "Yes",
+    "group": "Freaks"
+  },
+  {
+    "id": "b91a0fb1-7f43-42f6-9087-e5e400a4c954",
+    "lastEdited": "2023-09-12T08:25:00.000Z",
+    "name": "Louise Raskine",
+    "home": "FR",
+    "side": "Sarah",
+    "email": null,
+    "diet": [],
+    "group": "Raskines"
+  },
+  {
+    "id": "c087737d-0ca5-4fe5-a9b4-c14f647a42d7",
+    "lastEdited": "2023-09-12T08:22:00.000Z",
+    "name": "Emily Hearne",
+    "home": "UK",
+    "side": "Jack",
+    "email": null,
+    "diet": [
+      "Vegetarian"
+    ],
+    "confirmed": "Yes",
+    "group": "Jack Uni"
+  },
+  {
+    "id": "cdf72727-9797-4f13-baa1-146827b3813d",
+    "lastEdited": "2023-09-12T08:22:00.000Z",
+    "name": "Will Cafferky",
+    "home": "UK",
+    "side": "Jack",
+    "email": null,
+    "diet": [
+      "Vegetarian"
+    ],
+    "confirmed": "Yes",
+    "group": "Jack Uni"
+  },
+  {
+    "id": "368ccee2-35af-4284-92a9-ae427c6f7eb3",
+    "lastEdited": "2023-09-12T16:27:00.000Z",
+    "name": "Maiti",
+    "home": "UK",
+    "side": "Jack",
+    "email": null,
+    "diet": [],
+    "confirmed": "Yes",
+    "group": "Jack Uni"
+  },
+  {
+    "id": "05785ecd-68f5-42c0-b280-4f141bcbadd1",
+    "lastEdited": "2023-09-12T16:27:00.000Z",
+    "name": "Tom Barr",
+    "home": "UK",
+    "side": "Jack",
+    "email": null,
+    "diet": [
+      "Omni"
+    ],
+    "confirmed": "Yes",
+    "group": "Jack Uni"
+  },
+  {
+    "id": "a927bb76-09a3-4842-afe7-ac05f28c216b",
+    "lastEdited": "2023-09-29T14:36:00.000Z",
+    "name": "Tom Landon",
+    "home": "FR",
+    "side": "Sarah",
+    "email": null,
+    "diet": [],
+    "confirmed": "Yes",
+    "group": "Raskines"
+  },
+  {
+    "id": "266f5857-752b-42f4-99be-ca647c94f271",
+    "lastEdited": "2023-09-12T08:22:00.000Z",
+    "name": "Livy Smith",
+    "home": "UK",
+    "side": "Jack",
+    "email": null,
+    "diet": [
+      "Omni"
+    ],
+    "confirmed": "Yes",
+    "group": "Jack Uni"
+  },
+  {
+    "id": "7a0c5844-6de6-4b12-93e9-54434458e358",
+    "lastEdited": "2023-09-14T08:11:00.000Z",
+    "name": "Mario (Anne +1)",
+    "home": "FR",
+    "side": "Sarah",
+    "email": null,
+    "diet": [
+      "Omni"
+    ],
+    "confirmed": "Yes",
+    "group": "Le Hir"
+  },
+  {
+    "id": "97583bc9-2624-4cbe-b797-f0e63e1da150",
+    "lastEdited": "2023-09-14T08:11:00.000Z",
+    "name": "Anne Le Hir",
+    "home": "FR",
+    "side": "Sarah",
+    "email": null,
+    "diet": [
+      "Omni"
+    ],
+    "confirmed": "Yes",
+    "group": "Le Hir"
+  },
+  {
+    "id": "724244ca-7c50-48d3-9860-c6710ec49919",
+    "lastEdited": "2023-09-12T08:22:00.000Z",
+    "name": "Matt Hacke",
+    "home": "UK",
+    "side": "Jack",
+    "email": null,
+    "diet": [
+      "Omni"
+    ],
+    "confirmed": "Yes",
+    "group": "Jack Uni"
+  },
+  {
+    "id": "43fb0695-6d35-4500-a02d-438c1dd47923",
+    "lastEdited": "2023-09-12T08:22:00.000Z",
+    "name": "Ben Sergeant",
+    "home": "UK",
+    "side": "Jack",
+    "email": null,
+    "diet": [
+      "Omni"
+    ],
+    "confirmed": "Yes",
+    "group": "Jack School"
+  },
+  {
+    "id": "c8c3d34c-dd68-4d3e-a674-8ddff133aaf4",
+    "lastEdited": "2023-09-29T14:35:00.000Z",
+    "name": "Anne Raskine",
+    "home": "FR",
+    "side": "Sarah",
+    "email": null,
+    "diet": [],
+    "confirmed": "Yes",
+    "group": "Raskines"
+  },
+  {
+    "id": "a7843410-1d7f-4c61-ad28-044f34d43e62",
+    "lastEdited": "2023-09-12T08:22:00.000Z",
+    "name": "Henry Jackson",
+    "home": "UK",
+    "side": "Jack",
+    "email": null,
+    "diet": [
+      "Omni"
+    ],
+    "confirmed": "Yes",
+    "group": "Jack School"
+  },
+  {
+    "id": "1f1e3f87-32a0-491f-862f-5f55091a4b58",
+    "lastEdited": "2023-09-29T14:35:00.000Z",
+    "name": "Nathalie Le Hir",
+    "home": "FR",
+    "side": "Sarah",
+    "email": null,
+    "diet": [],
+    "confirmed": "Yes",
+    "group": "Le Hir"
+  },
+  {
+    "id": "22952478-2946-433a-99cf-577d57831ea8",
+    "lastEdited": "2023-09-14T07:56:00.000Z",
+    "name": "Emily Knott",
+    "home": "UK",
+    "side": "Jack",
+    "email": null,
+    "diet": [
+      "No Pork",
+      "No Shellfish"
+    ],
+    "confirmed": "Yes",
+    "group": "Jack School"
+  },
+  {
+    "id": "8657e900-93fe-4573-91dc-dca176d2a914",
+    "lastEdited": "2023-09-14T07:56:00.000Z",
+    "name": "Owen Swift",
+    "home": "UK",
+    "side": "Jack",
+    "email": null,
+    "diet": [
+      "Omni"
+    ],
+    "confirmed": "Yes",
+    "group": "Jack School"
+  },
+  {
+    "id": "88e32312-52be-4a63-8c16-0d4bc790a01d",
+    "lastEdited": "2023-09-12T08:22:00.000Z",
+    "name": "Tan",
+    "home": "UK",
+    "side": "Jack",
+    "email": null,
+    "diet": [
+      "Pescatarian"
+    ],
+    "confirmed": "Yes",
+    "group": "Jack School"
+  }
+]

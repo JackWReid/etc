@@ -1,0 +1,19 @@
+name = "weddingdatasync"
+main = "src/index.js"
+compatibility_date = "2023-12-19"
+
+[triggers]
+crons = [ "*/30 * * * *" ]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "sarahandjackwedding"
+database_id = "a265a730-392d-4951-80c3-23e2256b4a75"
+
+[vars]
+GUEST_DB = "5f4d44990f714138bdc1cbf8dce9ee43"
+GIFT_DB = "7f6a6ab53cfa4bc9a86c1f4db4fb3b3c"
+GUEST_RES_DB = "3960fb5b34144851be7e982545810a19"
+GIFT_RES_DB = "adf8398bded54150b3992355921db1d5"
+CLOUDFLARE_DB_ID = "a265a730-392d-4951-80c3-23e2256b4a75"
+CLOUDFLARE_ACCOUNT_ID = "f163765cc814ca4c341357f282e5d166"

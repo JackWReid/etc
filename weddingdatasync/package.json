@@ -1,0 +1,17 @@
+{
+  "name": "weddingdatasync",
+  "version": "0.0.0",
+  "devDependencies": {
+    "miniflare": "^3.20231030.4",
+    "wrangler": "3.21.0"
+  },
+  "private": true,
+  "scripts": {
+    "start": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "migrate": "wrangler d1 execute sarahandjackwedding --local --file=./schema.sql"
+  },
+  "dependencies": {
+    "@notionhq/client": "^2.2.14"
+  }
+}

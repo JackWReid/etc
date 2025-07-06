@@ -1,0 +1,46 @@
+package templates
+
+import (
+	"fmt"
+	"shelfish/model"
+)
+
+templ BookDetail(book model.DisplayBook) {
+	@layout(book.Title) {
+		<div class="book-detail">
+			<div class="book-left-col">
+				if book.ImageURL != "" {
+					<img src={ book.ImageURL }/>
+				}
+				if book.ISBN != "" {
+					<p>ISBN: { book.ISBN }</p>
+				}
+				if book.ISBN13 != "" {
+					<p>ISBN13: { book.ISBN13 }</p>
+				}
+				if book.ASIN != "" {
+					<p>ADIN: { book.ASIN }</p>
+				}
+				if book.OkuID != "" {
+					@OkuBadge(book.OkuURL)
+				}
+				if book.GoodreadsID != "" {
+					@GoodreadsBadge(book.GoodreadsURL)
+				}
+				if book.AmazonID != "" {
+					@AmazonBadge(book.AmazonURL)
+				}
+			</div>
+			<div class="book-right-col">
+				<h1>{ book.Title }</h1>
+				<h2>by { book.Author }</h2>
+				<sl-button size="small" href={ "/book/" + fmt.Sprint(book.ID) + "/edit" }>
+					Edit
+				</sl-button>
+				@ReadBadge(book.StatusRead)
+				@OwnedBadge(book.StatusOwned)
+				<p>{ book.Description }</p>
+			</div>
+		</div>
+	}
+}

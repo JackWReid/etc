@@ -1,0 +1,23 @@
+package templates
+
+import "shelfish/model"
+
+templ Home(title string, events []model.DisplayBookEvent) {
+	@layout("Home") {
+		<ul class="book-update-list">
+			for _, event := range events {
+				<li class="book-update-list-item">
+          <img class="book-update-list-item__image" src={ event.Book.ImageURL } />
+          <div>
+            <a class="book-update-list-item__link" href={ templ.URL("/book/" + event.Book.ID) }>
+              <h1 class="book-update-list-item__name">
+                <span class="book-update-list-item__title">{ event.Book.Title }</span> by { event.Book.Author }</h1>
+            </a>
+            @ReadBadge(event.Book.StatusRead)
+            <time class="book-update-list-item__date">{ DateStringToRelative(event.EventDate) }</time>
+          </div>
+				</li>
+			}
+		</ul>
+	}
+}

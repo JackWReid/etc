@@ -1,0 +1,12 @@
+name = "weddingsubmissions"
+main = "src/index.js"
+compatibility_date = "2023-12-18"
+
+[vars]
+CLOUDFLARE_DB_ID = "a265a730-392d-4951-80c3-23e2256b4a75"
+CLOUDFLARE_ACCOUNT_ID = "f163765cc814ca4c341357f282e5d166"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "sarahandjackwedding"
+database_id = "a265a730-392d-4951-80c3-23e2256b4a75"

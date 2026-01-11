@@ -1,0 +1,79 @@
+# Downscale
+
+## Requirements
+
+You’re going to create a program called downscale. It is responsible for:
+- Scanning a directory of movies for files that are unreasonably large
+- Using ffmpeg to transcode them to a known good-enough format
+- Managing this process in a way that is trackable, debugabble, and resumable
+- If any transcode fails, exit 1
+
+You’ll use the most suitable programming language, and SQLite. You’ll use SQLite to persist:
+- Your scans of the source directory, with file locations and sizes
+- Your task list derived from the list of files that are too large
+- Your progress through the task list at last interrupt
+- The locations and sizes of transcoded files in the target directory
+
+## Expected directory structure
+
+The directory structure will be like this:
+
+```
+/mnt/Puddle
+├── Media
+│   ├── Movies
+│   │   └── Movie (Year)
+│   │       └── .mkv/.mp4 etc
+│   └── Transcodes
+│       └── Movie (Year)
+│           └── .mp4 etc
+
+/home/admin
+├── .cache
+│   └── downscale
+│       ├── downscale.sql
+│       └── logs
+└── .local
+    └── bin
+        └── downscale
+```
+
+## TUI
+
+### Arguments
+
+The program will have a well-documented CLI interface and take the following options:
+
+- threshold/t: threshold in GB over which a downscale will be made (default: 10GB)
+- source/s: override movie directory containing movies to be scanned (default: /mnt/Puddle/Media/Movies)
+- output/o: override transcode directory where downscales will be created (default: /mnt/Puddle/Media/Transcodes)
+- db: database location (default: /home/admin/.cache/downscale/downscale.sql)
+- log: logs directory (default: /home/admin/.cache/downscales/logs)
+- dry/d: print the movies to converted to stdout but don’t start (default: false)
+- y: skip confirmation of movies to be converted and just start (default: false)
+
+### Transcode tasks output
+
+When invoked the program should output a well-formatted list of the movies to be downscaled, their file sizes, their total length, their status (completed, interrupted, errored). The command line interface should be modern and clear, using a library for full colour, formatted output.
+
+### Transcode progress
+
+The progress indicator should indicate:
+- The progress through the overall task list, with the elapsed time of this overall run
+- The elapsed time of this transcode
+- The percentage through the transcode, derived from the current timestamp of transcode output divided by the total duration of the file
+- The FPS (51FPS) and speed (1.01x) of the transcode
+
+## Transcode logic
+
+The program will spawn a subprocess of ffmpeg that will do the actual transcode, and it must handle the management of this process. Terminating it properly if the parent process stops, catching and reporting errors when ffmpeg bails etc. ffmpeg will transcode the file to a best quality 1080p format that includes all audio and subtitle tracks. If a task has previously been interrupted, try to use ffmpeg's functionality to resume the transcode.
+
+## Logging
+
+The program will output an information log file as well as terminal output. The logs should contain timecodes and events like directory scans, DB opens, transcodes, errors, interrupts, etc. The program will handle log rotation itself.
+
+## Setup
+
+On startup, the program will create its database and log files and directory if needed. However, if the home directory or the movies base directory don’t exist, bail.
+
+If the program uses any non stdlib dependencies that need installing, create the necessary files and communicate the necessary project structure and build dependencies.

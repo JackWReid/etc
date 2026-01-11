@@ -1,0 +1,52 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "downscale"
+version = "0.1.0"
+description = "Scans movie directories, identifies large files, and transcodes them using ffmpeg."
+readme = "README.md" # Optional: Add a README file later
+requires-python = ">=3.8"
+license = {text = "MIT"} # Or choose another license
+authors = [
+  {name = "Jack Hackinger-Reid", email = "hello@jackreid.xyz"},
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Multimedia :: Video :: Conversion",
+    "Environment :: Console",
+]
+dependencies = [
+    "rich>=13.0.0",         # For TUI elements (progress bars, tables, formatted output)
+    "typer[all]>=0.9.0",    # For modern CLI argument parsing (includes shellingham for completion)
+    "sqlalchemy>=2.0.0",    # For robust database interaction (ORM or Core)
+]
+
+[project.urls]
+Homepage = "https://github.com/yourusername/downscale" # Optional: Add project URL
+Repository = "https://github.com/yourusername/downscale" # Optional: Add repo URL
+
+[project.scripts]
+# This allows running 'downscale' from the command line after installation
+downscale = "downscale.main:main"
+
+[tool.setuptools.packages.find]
+# Automatically find packages (assuming your code is in a 'downscale' directory)
+where = ["."] # Search for packages in the current directory
+
+# Optional: Configure linters/formatters like black, ruff, mypy
+# [tool.black]
+# line-length = 88
+#
+# [tool.ruff]
+# select = ["E", "W", "F", "I", "C", "B"] # Example rule selection
+# ignore = ["E501"] # Example ignore rule (line too long, handled by black)
+# line-length = 88
+
